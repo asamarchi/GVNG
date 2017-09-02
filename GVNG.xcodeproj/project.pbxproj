@@ -7,14 +7,40 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D60DFDAA1F58DD2E000A7241 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60DFDA91F58DD2E000A7241 /* FirebaseAnalytics.framework */; };
+		D60DFDAC1F58E08B000A7241 /* FirebaseNanoPB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60DFDAB1F58E08B000A7241 /* FirebaseNanoPB.framework */; };
+		D60DFDAE1F58E0C7000A7241 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60DFDAD1F58E0C7000A7241 /* leveldb-library.framework */; };
+		D60DFDB01F58E0E0000A7241 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60DFDAF1F58E0E0000A7241 /* GTMSessionFetcher.framework */; };
+		D60DFDB21F58E0FC000A7241 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60DFDB11F58E0FC000A7241 /* nanopb.framework */; };
 		D61486BC1F58D03900FDF8A8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61486BB1F58D03900FDF8A8 /* AppDelegate.swift */; };
 		D61486BE1F58D03900FDF8A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61486BD1F58D03900FDF8A8 /* ViewController.swift */; };
 		D61486C11F58D03900FDF8A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61486BF1F58D03900FDF8A8 /* Main.storyboard */; };
 		D61486C31F58D03900FDF8A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61486C21F58D03900FDF8A8 /* Assets.xcassets */; };
 		D61486C61F58D03900FDF8A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61486C41F58D03900FDF8A8 /* LaunchScreen.storyboard */; };
+		D61486CE1F58D03E00FDF8A8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D61486CD1F58D03E00FDF8A8 /* GoogleService-Info.plist */; };
+		D61486DB1F58D0F800FDF8A8 /* FirebaseCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61486D41F58D0F800FDF8A8 /* FirebaseCore.framework */; };
+		D61486DC1F58D0F800FDF8A8 /* FirebaseCoreDiagnostics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61486D51F58D0F800FDF8A8 /* FirebaseCoreDiagnostics.framework */; };
+		D61486DD1F58D0F800FDF8A8 /* FirebaseInstanceID.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61486D61F58D0F800FDF8A8 /* FirebaseInstanceID.framework */; };
+		D61486E51F58D11300FDF8A8 /* FirebaseAuth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61486E31F58D11300FDF8A8 /* FirebaseAuth.framework */; };
+		D61486E91F58D11C00FDF8A8 /* FirebaseDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61486E71F58D11C00FDF8A8 /* FirebaseDatabase.framework */; };
+		D61486ED1F58D58600FDF8A8 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61486EC1F58D58600FDF8A8 /* Security.framework */; };
+		D61486EF1F58D58C00FDF8A8 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61486EE1F58D58C00FDF8A8 /* SystemConfiguration.framework */; };
+		D61486F11F58D59200FDF8A8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61486F01F58D59200FDF8A8 /* CFNetwork.framework */; };
+		D61486F31F58D5A100FDF8A8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D61486F21F58D5A100FDF8A8 /* libc++.tbd */; };
+		D61486F51F58D5A800FDF8A8 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D61486F41F58D5A800FDF8A8 /* libicucore.tbd */; };
+		D6DA647E1F5B0C1B0086E661 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */; };
+		D6DA64891F5B0FBA0086E661 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64861F5B0FBA0086E661 /* SpotifyAudioPlayback.framework */; };
+		D6DA648A1F5B0FBA0086E661 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64871F5B0FBA0086E661 /* SpotifyAuthentication.framework */; };
+		D6DA648B1F5B0FBA0086E661 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64881F5B0FBA0086E661 /* SpotifyMetadata.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D60DFDA91F58DD2E000A7241 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		D60DFDAB1F58E08B000A7241 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseNanoPB.framework; sourceTree = "<group>"; };
+		D60DFDAD1F58E0C7000A7241 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "leveldb-library.framework"; sourceTree = "<group>"; };
+		D60DFDAF1F58E0E0000A7241 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = "<group>"; };
+		D60DFDB11F58E0FC000A7241 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
+		D60DFDB31F58E23F000A7241 /* GVNG-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVNG-Bridging-Header.h"; sourceTree = "<group>"; };
 		D61486B81F58D03900FDF8A8 /* GVNG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GVNG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61486BB1F58D03900FDF8A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D61486BD1F58D03900FDF8A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +48,23 @@
 		D61486C21F58D03900FDF8A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D61486C51F58D03900FDF8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D61486C71F58D03900FDF8A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D61486CD1F58D03E00FDF8A8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D61486D41F58D0F800FDF8A8 /* FirebaseCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCore.framework; sourceTree = "<group>"; };
+		D61486D51F58D0F800FDF8A8 /* FirebaseCoreDiagnostics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseCoreDiagnostics.framework; sourceTree = "<group>"; };
+		D61486D61F58D0F800FDF8A8 /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseInstanceID.framework; sourceTree = "<group>"; };
+		D61486E11F58D10500FDF8A8 /* Firebase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Firebase.h; sourceTree = "<group>"; };
+		D61486E21F58D10500FDF8A8 /* module.modulemap */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = module.modulemap; sourceTree = "<group>"; };
+		D61486E31F58D11300FDF8A8 /* FirebaseAuth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAuth.framework; sourceTree = "<group>"; };
+		D61486E71F58D11C00FDF8A8 /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseDatabase.framework; sourceTree = "<group>"; };
+		D61486EC1F58D58600FDF8A8 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		D61486EE1F58D58C00FDF8A8 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D61486F01F58D59200FDF8A8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		D61486F21F58D5A100FDF8A8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
+		D61486F41F58D5A800FDF8A8 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		D6DA64861F5B0FBA0086E661 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
+		D6DA64871F5B0FBA0086E661 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
+		D6DA64881F5B0FBA0086E661 /* SpotifyMetadata.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyMetadata.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +72,24 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D61486F51F58D5A800FDF8A8 /* libicucore.tbd in Frameworks */,
+				D61486F31F58D5A100FDF8A8 /* libc++.tbd in Frameworks */,
+				D61486F11F58D59200FDF8A8 /* CFNetwork.framework in Frameworks */,
+				D60DFDAC1F58E08B000A7241 /* FirebaseNanoPB.framework in Frameworks */,
+				D61486EF1F58D58C00FDF8A8 /* SystemConfiguration.framework in Frameworks */,
+				D61486ED1F58D58600FDF8A8 /* Security.framework in Frameworks */,
+				D61486DC1F58D0F800FDF8A8 /* FirebaseCoreDiagnostics.framework in Frameworks */,
+				D60DFDB21F58E0FC000A7241 /* nanopb.framework in Frameworks */,
+				D61486DB1F58D0F800FDF8A8 /* FirebaseCore.framework in Frameworks */,
+				D60DFDAA1F58DD2E000A7241 /* FirebaseAnalytics.framework in Frameworks */,
+				D61486E91F58D11C00FDF8A8 /* FirebaseDatabase.framework in Frameworks */,
+				D61486E51F58D11300FDF8A8 /* FirebaseAuth.framework in Frameworks */,
+				D60DFDAE1F58E0C7000A7241 /* leveldb-library.framework in Frameworks */,
+				D60DFDB01F58E0E0000A7241 /* GTMSessionFetcher.framework in Frameworks */,
+				D61486DD1F58D0F800FDF8A8 /* FirebaseInstanceID.framework in Frameworks */,
+				D6DA648B1F5B0FBA0086E661 /* SpotifyMetadata.framework in Frameworks */,
+				D6DA64891F5B0FBA0086E661 /* SpotifyAudioPlayback.framework in Frameworks */,
+				D6DA648A1F5B0FBA0086E661 /* SpotifyAuthentication.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,8 +99,11 @@
 		D61486AF1F58D03900FDF8A8 = {
 			isa = PBXGroup;
 			children = (
+				D60DFDB31F58E23F000A7241 /* GVNG-Bridging-Header.h */,
 				D61486BA1F58D03900FDF8A8 /* GVNG */,
 				D61486B91F58D03900FDF8A8 /* Products */,
+				D6DA64801F5B0F8D0086E661 /* Dependencies */,
+				D61486EB1F58D58500FDF8A8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,12 +119,89 @@
 			isa = PBXGroup;
 			children = (
 				D61486BB1F58D03900FDF8A8 /* AppDelegate.swift */,
+				D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */,
 				D61486BD1F58D03900FDF8A8 /* ViewController.swift */,
 				D61486BF1F58D03900FDF8A8 /* Main.storyboard */,
 				D61486C21F58D03900FDF8A8 /* Assets.xcassets */,
 				D61486C41F58D03900FDF8A8 /* LaunchScreen.storyboard */,
 				D61486C71F58D03900FDF8A8 /* Info.plist */,
 			);
+			path = GVNG;
+			sourceTree = "<group>";
+		};
+		D61486CF1F58D04200FDF8A8 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				D61486E11F58D10500FDF8A8 /* Firebase.h */,
+				D61486E21F58D10500FDF8A8 /* module.modulemap */,
+				D61486CD1F58D03E00FDF8A8 /* GoogleService-Info.plist */,
+				D61486D01F58D05300FDF8A8 /* Firebase Analytics */,
+				D61486D11F58D05C00FDF8A8 /* Firebase Auth */,
+				D61486D21F58D06800FDF8A8 /* Firebase Database */,
+			);
+			name = Firebase;
+			sourceTree = "<group>";
+		};
+		D61486D01F58D05300FDF8A8 /* Firebase Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				D60DFDA91F58DD2E000A7241 /* FirebaseAnalytics.framework */,
+				D61486D41F58D0F800FDF8A8 /* FirebaseCore.framework */,
+				D61486D51F58D0F800FDF8A8 /* FirebaseCoreDiagnostics.framework */,
+				D61486D61F58D0F800FDF8A8 /* FirebaseInstanceID.framework */,
+				D60DFDAB1F58E08B000A7241 /* FirebaseNanoPB.framework */,
+				D60DFDB11F58E0FC000A7241 /* nanopb.framework */,
+			);
+			name = "Firebase Analytics";
+			sourceTree = "<group>";
+		};
+		D61486D11F58D05C00FDF8A8 /* Firebase Auth */ = {
+			isa = PBXGroup;
+			children = (
+				D60DFDAF1F58E0E0000A7241 /* GTMSessionFetcher.framework */,
+				D61486E31F58D11300FDF8A8 /* FirebaseAuth.framework */,
+			);
+			name = "Firebase Auth";
+			sourceTree = "<group>";
+		};
+		D61486D21F58D06800FDF8A8 /* Firebase Database */ = {
+			isa = PBXGroup;
+			children = (
+				D60DFDAD1F58E0C7000A7241 /* leveldb-library.framework */,
+				D61486E71F58D11C00FDF8A8 /* FirebaseDatabase.framework */,
+			);
+			name = "Firebase Database";
+			sourceTree = "<group>";
+		};
+		D61486EB1F58D58500FDF8A8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D61486F41F58D5A800FDF8A8 /* libicucore.tbd */,
+				D61486F21F58D5A100FDF8A8 /* libc++.tbd */,
+				D61486F01F58D59200FDF8A8 /* CFNetwork.framework */,
+				D61486EE1F58D58C00FDF8A8 /* SystemConfiguration.framework */,
+				D61486EC1F58D58600FDF8A8 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D6DA647F1F5B0F810086E661 /* Spotify */ = {
+			isa = PBXGroup;
+			children = (
+				D6DA64861F5B0FBA0086E661 /* SpotifyAudioPlayback.framework */,
+				D6DA64871F5B0FBA0086E661 /* SpotifyAuthentication.framework */,
+				D6DA64881F5B0FBA0086E661 /* SpotifyMetadata.framework */,
+			);
+			name = Spotify;
+			sourceTree = "<group>";
+		};
+		D6DA64801F5B0F8D0086E661 /* Dependencies */ = {
+			isa = PBXGroup;
+			children = (
+				D6DA647F1F5B0F810086E661 /* Spotify */,
+				D61486CF1F58D04200FDF8A8 /* Firebase */,
+			);
+			name = Dependencies;
 			path = GVNG;
 			sourceTree = "<group>";
 		};
@@ -125,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D61486C61F58D03900FDF8A8 /* LaunchScreen.storyboard in Resources */,
+				D61486CE1F58D03E00FDF8A8 /* GoogleService-Info.plist in Resources */,
 				D61486C31F58D03900FDF8A8 /* Assets.xcassets in Resources */,
 				D61486C11F58D03900FDF8A8 /* Main.storyboard in Resources */,
 			);
@@ -137,6 +279,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6DA647E1F5B0C1B0086E661 /* FirebaseManager.swift in Sources */,
 				D61486BE1F58D03900FDF8A8 /* ViewController.swift in Sources */,
 				D61486BC1F58D03900FDF8A8 /* AppDelegate.swift in Sources */,
 			);
@@ -264,10 +407,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 66WC295E7G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GVNG",
+				);
 				INFOPLIST_FILE = GVNG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gvnggvng.GVNG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -277,10 +426,16 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 66WC295E7G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/GVNG",
+				);
 				INFOPLIST_FILE = GVNG/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_BUNDLE_IDENTIFIER = com.gvnggvng.GVNG;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(PROJECT_DIR)/$(PROJECT_NAME)-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +459,7 @@
 				D61486CC1F58D03900FDF8A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
