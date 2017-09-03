@@ -56,13 +56,26 @@ class LoginVerificationCodeViewController: UIViewController, Instantiable {
         verificationCodeTextField.inputAccessoryView = verificationAccessoryView
     }
     
+    private func showMusicServiceViewController() {
+        guard let musicServiceViewController = LoginMusicServiceSelectionViewController.instantiateFromStoryboard() else { return }
+        
+        self.navigationController?.pushViewController(musicServiceViewController, animated: true)
+    }
+    
+    private func showPhoneNumberErrorViewController() {
+        guard let errorViewController = LoginErrorViewController.instantiateFromStoryboard() else { return }
+        errorViewController.errorMessage = "Verification Code Did Not Work"
+        
+        present(errorViewController, animated: true, completion: nil)
+    }
+    
     @IBAction func nextButtonTapped(_ sender: Any) {
         guard let verificationCode = verificationCodeTextField.text else { return }
         
         FirebaseManager.signIn(withVerificationCode: verificationCode, success: { (user) in
-            print(user)
+            self.showMusicServiceViewController()
         }) { (error) in
-            print("failure")
+            self.showPhoneNumberErrorViewController()
         }
     }
 }

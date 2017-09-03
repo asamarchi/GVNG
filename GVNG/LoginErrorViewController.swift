@@ -15,6 +15,12 @@ class LoginErrorViewController: UIViewController, Instantiable {
         static let Identifier = "LoginErrorViewController"
     }
     
+    static func storyboardSpecifications() -> StoryboardSpecifications {
+        let storyboard = UIStoryboard(name: Storyboard.Name, bundle: nil)
+        let identifier = Storyboard.Identifier
+        return StoryboardSpecifications(storyboard, identifier)
+    }
+    
     // MARK: - Properties
     
     var errorMessage: String = ""
@@ -52,11 +58,4 @@ class LoginErrorViewController: UIViewController, Instantiable {
             self.dismiss(animated: true, completion: nil)
         }
     }
-    
-    static func storyboardSpecifications() -> StoryboardSpecifications {
-        let storyboard = UIStoryboard(name: Storyboard.Name, bundle: nil)
-        let identifier = Storyboard.Identifier
-        return StoryboardSpecifications(storyboard, identifier)
-    }
-
 }

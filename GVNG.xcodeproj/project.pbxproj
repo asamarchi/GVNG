@@ -32,6 +32,7 @@
 		D619DC4E1F5B761000CA0E83 /* LoginErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619DC4D1F5B761000CA0E83 /* LoginErrorViewController.swift */; };
 		D619DC501F5B78DD00CA0E83 /* Instantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619DC4F1F5B78DD00CA0E83 /* Instantiable.swift */; };
 		D619DC521F5B7EC600CA0E83 /* LoginVerificationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619DC511F5B7EC600CA0E83 /* LoginVerificationCodeViewController.swift */; };
+		D619DC5E1F5C72EB00CA0E83 /* LoginMusicServiceSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619DC5D1F5C72EB00CA0E83 /* LoginMusicServiceSelectionViewController.swift */; };
 		D6DA647E1F5B0C1B0086E661 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */; };
 		D6DA64891F5B0FBA0086E661 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64861F5B0FBA0086E661 /* SpotifyAudioPlayback.framework */; };
 		D6DA648A1F5B0FBA0086E661 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64871F5B0FBA0086E661 /* SpotifyAuthentication.framework */; };
@@ -74,6 +75,7 @@
 		D619DC4D1F5B761000CA0E83 /* LoginErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginErrorViewController.swift; sourceTree = "<group>"; };
 		D619DC4F1F5B78DD00CA0E83 /* Instantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instantiable.swift; sourceTree = "<group>"; };
 		D619DC511F5B7EC600CA0E83 /* LoginVerificationCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVerificationCodeViewController.swift; sourceTree = "<group>"; };
+		D619DC5D1F5C72EB00CA0E83 /* LoginMusicServiceSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginMusicServiceSelectionViewController.swift; sourceTree = "<group>"; };
 		D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		D6DA64861F5B0FBA0086E661 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
 		D6DA64871F5B0FBA0086E661 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
@@ -253,9 +255,10 @@
 		D619DC581F5B90CC00CA0E83 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				D619DC4D1F5B761000CA0E83 /* LoginErrorViewController.swift */,
 				D6152E481F5B4F7E00078D09 /* LoginPhoneNumberViewController.swift */,
 				D619DC511F5B7EC600CA0E83 /* LoginVerificationCodeViewController.swift */,
-				D619DC4D1F5B761000CA0E83 /* LoginErrorViewController.swift */,
+				D619DC5D1F5C72EB00CA0E83 /* LoginMusicServiceSelectionViewController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -407,6 +410,7 @@
 				D6E37E931F5B4D10004C0DBE /* UIColor+Gvng.swift in Sources */,
 				D6E37E911F5B4CFE004C0DBE /* UIFont+Gvng.swift in Sources */,
 				D6152E491F5B4F7E00078D09 /* LoginPhoneNumberViewController.swift in Sources */,
+				D619DC5E1F5C72EB00CA0E83 /* LoginMusicServiceSelectionViewController.swift in Sources */,
 				D619DC501F5B78DD00CA0E83 /* Instantiable.swift in Sources */,
 				D61486BC1F58D03900FDF8A8 /* AppDelegate.swift in Sources */,
 			);

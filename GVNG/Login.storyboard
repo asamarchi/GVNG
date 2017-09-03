@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -182,6 +183,135 @@
             </objects>
             <point key="canvasLocation" x="772" y="108.39580209895054"/>
         </scene>
+        <!--Login Music Service Selection View Controller-->
+        <scene sceneID="6QC-va-seE">
+            <objects>
+                <viewController storyboardIdentifier="LoginMusicServiceSelectionViewController" id="cpM-Js-BDa" customClass="LoginMusicServiceSelectionViewController" customModule="GVNG" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="x8B-Dv-xWS"/>
+                        <viewControllerLayoutGuide type="bottom" id="RCo-wn-jU5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NC5-aT-aYa">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select all the music services you have" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdT-ao-vlv" userLabel="MessageLabel">
+                                <rect key="frame" x="40" y="98" width="294" height="63"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="294" id="aom-C2-Sjh"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojs-9h-HbO" userLabel="Music Service Button View">
+                                <rect key="frame" x="54" y="231" width="268" height="268"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPL-SR-tGZ" userLabel="Apple Music Button">
+                                        <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="114" id="Zdx-BE-hwR"/>
+                                            <constraint firstAttribute="height" constant="114" id="yrh-hb-nAz"/>
+                                        </constraints>
+                                        <state key="normal" image="itunes"/>
+                                        <connections>
+                                            <action selector="appleMusicTapped:" destination="cpM-Js-BDa" eventType="touchUpInside" id="qVP-Gu-Bj9"/>
+                                        </connections>
+                                    </button>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallcheck" translatesAutoresizingMaskIntoConstraints="NO" id="rdq-rU-Lpa" userLabel="AppleMusicCheck">
+                                        <rect key="frame" x="78" y="-6" width="36" height="36"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GAv-Cz-q2G" userLabel="Spotify Button">
+                                        <rect key="frame" x="154" y="0.0" width="114" height="114"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="114" id="LOh-42-y8h"/>
+                                            <constraint firstAttribute="height" constant="114" id="s1c-Q3-00f"/>
+                                        </constraints>
+                                        <state key="normal" image="spotify"/>
+                                        <connections>
+                                            <action selector="spotifyTapped:" destination="cpM-Js-BDa" eventType="touchUpInside" id="G0x-DU-Wc5"/>
+                                        </connections>
+                                    </button>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallcheck" translatesAutoresizingMaskIntoConstraints="NO" id="eUG-X1-Aeh" userLabel="SpotifyCheck">
+                                        <rect key="frame" x="229" y="-6" width="36" height="36"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ME-gK-0bR" userLabel="Soundcloud Button">
+                                        <rect key="frame" x="154" y="154" width="114" height="114"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="114" id="Qfb-id-xrY"/>
+                                            <constraint firstAttribute="height" constant="114" id="Run-te-del"/>
+                                        </constraints>
+                                        <state key="normal" image="soundCloud"/>
+                                        <connections>
+                                            <action selector="soundCloudTapped:" destination="cpM-Js-BDa" eventType="touchUpInside" id="UVr-kY-gAP"/>
+                                        </connections>
+                                    </button>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallcheck" translatesAutoresizingMaskIntoConstraints="NO" id="EMe-qz-Krr" userLabel="SoundCloudCheck">
+                                        <rect key="frame" x="229" y="144" width="36" height="36"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aib-Ke-s3Y" userLabel="Google Music Button">
+                                        <rect key="frame" x="0.0" y="154" width="114" height="114"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="114" id="2kj-Rz-DBg"/>
+                                            <constraint firstAttribute="height" constant="114" id="V6K-gr-6RW"/>
+                                        </constraints>
+                                        <state key="normal" image="googleMusic"/>
+                                        <connections>
+                                            <action selector="googleMusicTapped:" destination="cpM-Js-BDa" eventType="touchUpInside" id="UoN-9j-bIJ"/>
+                                        </connections>
+                                    </button>
+                                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="smallcheck" translatesAutoresizingMaskIntoConstraints="NO" id="qdZ-he-66i" userLabel="GoogleMusicCheck">
+                                        <rect key="frame" x="78" y="144" width="36" height="36"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="EMe-qz-Krr" firstAttribute="centerX" secondItem="5ME-gK-0bR" secondAttribute="centerX" constant="36" id="8L7-9B-Bud"/>
+                                    <constraint firstItem="GAv-Cz-q2G" firstAttribute="leading" secondItem="qPL-SR-tGZ" secondAttribute="trailing" constant="40" id="9DG-j9-CpT"/>
+                                    <constraint firstItem="eUG-X1-Aeh" firstAttribute="centerY" secondItem="GAv-Cz-q2G" secondAttribute="centerY" multiplier="0.3" constant="-5.0999999999999996" id="9j6-4T-7CT"/>
+                                    <constraint firstAttribute="bottom" secondItem="aib-Ke-s3Y" secondAttribute="bottom" id="AtY-0p-Wiq"/>
+                                    <constraint firstItem="5ME-gK-0bR" firstAttribute="leading" secondItem="aib-Ke-s3Y" secondAttribute="trailing" constant="40" id="DB6-eo-w1H"/>
+                                    <constraint firstItem="aib-Ke-s3Y" firstAttribute="leading" secondItem="Ojs-9h-HbO" secondAttribute="leading" id="Hv3-ph-F4P"/>
+                                    <constraint firstItem="qPL-SR-tGZ" firstAttribute="leading" secondItem="Ojs-9h-HbO" secondAttribute="leading" id="Oj8-Qa-2Nu"/>
+                                    <constraint firstAttribute="trailing" secondItem="5ME-gK-0bR" secondAttribute="trailing" id="QFh-zQ-IJm"/>
+                                    <constraint firstItem="rdq-rU-Lpa" firstAttribute="centerY" secondItem="qPL-SR-tGZ" secondAttribute="centerY" multiplier="0.3" constant="-5.0999999999999996" id="QVR-Hh-f4i"/>
+                                    <constraint firstItem="aib-Ke-s3Y" firstAttribute="top" secondItem="qPL-SR-tGZ" secondAttribute="bottom" constant="40" id="RK9-q4-WuR"/>
+                                    <constraint firstAttribute="trailing" secondItem="GAv-Cz-q2G" secondAttribute="trailing" id="ZhT-8t-Dz7"/>
+                                    <constraint firstItem="EMe-qz-Krr" firstAttribute="centerY" secondItem="5ME-gK-0bR" secondAttribute="centerY" constant="-49" id="bJa-hB-Ozz"/>
+                                    <constraint firstAttribute="bottom" secondItem="5ME-gK-0bR" secondAttribute="bottom" id="cbR-S0-gW3"/>
+                                    <constraint firstItem="rdq-rU-Lpa" firstAttribute="centerX" secondItem="qPL-SR-tGZ" secondAttribute="centerX" multiplier="2" constant="-18" id="eed-b1-ESC"/>
+                                    <constraint firstAttribute="height" constant="268" id="hxC-96-s6E"/>
+                                    <constraint firstItem="5ME-gK-0bR" firstAttribute="top" secondItem="GAv-Cz-q2G" secondAttribute="bottom" constant="40" id="kme-6j-3YR"/>
+                                    <constraint firstItem="eUG-X1-Aeh" firstAttribute="centerX" secondItem="GAv-Cz-q2G" secondAttribute="centerX" constant="36" id="m14-DJ-FvD"/>
+                                    <constraint firstItem="qdZ-he-66i" firstAttribute="centerX" secondItem="aib-Ke-s3Y" secondAttribute="centerX" constant="39" id="qCG-mC-ZK8"/>
+                                    <constraint firstAttribute="width" constant="268" id="scQ-aF-dij"/>
+                                    <constraint firstItem="qdZ-he-66i" firstAttribute="centerY" secondItem="aib-Ke-s3Y" secondAttribute="centerY" constant="-49" id="vCD-wc-6E4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cdT-ao-vlv" firstAttribute="top" secondItem="x8B-Dv-xWS" secondAttribute="bottom" constant="78" id="IDs-dQ-Irh"/>
+                            <constraint firstItem="Ojs-9h-HbO" firstAttribute="centerX" secondItem="NC5-aT-aYa" secondAttribute="centerX" id="Tq8-9c-hRK"/>
+                            <constraint firstItem="Ojs-9h-HbO" firstAttribute="top" secondItem="cdT-ao-vlv" secondAttribute="bottom" constant="70" id="icl-Hk-VLK"/>
+                            <constraint firstItem="cdT-ao-vlv" firstAttribute="centerX" secondItem="NC5-aT-aYa" secondAttribute="centerX" id="kur-eQ-SWA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="appleMusicButton" destination="qPL-SR-tGZ" id="Zqf-va-dfQ"/>
+                        <outlet property="appleMusicCheck" destination="rdq-rU-Lpa" id="dXa-ns-5AQ"/>
+                        <outlet property="googleMusicButton" destination="aib-Ke-s3Y" id="qBB-V4-Bl3"/>
+                        <outlet property="googleMusicCheck" destination="qdZ-he-66i" id="p59-ZO-7q9"/>
+                        <outlet property="messageLabel" destination="cdT-ao-vlv" id="lYi-Rw-z7F"/>
+                        <outlet property="soundCloudCheck" destination="EMe-qz-Krr" id="EQA-fb-S5o"/>
+                        <outlet property="soundcloudButton" destination="5ME-gK-0bR" id="IHh-bx-EG0"/>
+                        <outlet property="spotifyButton" destination="GAv-Cz-q2G" id="kuk-d9-hCG"/>
+                        <outlet property="spotifyCheck" destination="eUG-X1-Aeh" id="uGD-e8-8ys"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UU8-Ya-gXg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1488.8" y="107.49625187406298"/>
+        </scene>
         <!--Login Error View Controller-->
         <scene sceneID="i1d-HJ-ZvA">
             <objects>
@@ -226,7 +356,12 @@
         </scene>
     </scenes>
     <resources>
+        <image name="googleMusic" width="114" height="114"/>
+        <image name="itunes" width="114" height="114"/>
         <image name="pinkNext" width="49" height="49"/>
         <image name="rectangle85" width="10" height="7"/>
+        <image name="smallcheck" width="36" height="36"/>
+        <image name="soundCloud" width="114" height="114"/>
+        <image name="spotify" width="114" height="114"/>
     </resources>
 </document>

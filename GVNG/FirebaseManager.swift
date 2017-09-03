@@ -55,7 +55,20 @@ class FirebaseManager {
             if error != nil {
                 failure(error)
             }
-            success(user)
+            
+            guard let userID = user?.uid else { return }
+            ref.child("users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
+                if let value = snapshot.value as? NSDictionary {
+                    //TODO: Redirect to landing page
+                    success(user)
+                } else {
+                    ref.child("users").child(userID).setValue(["uid": userID])
+                    success(user)
+                }
+            }) { (error) in
+                print(error.localizedDescription)
+            }
+            
         }
     }
 }
