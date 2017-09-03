@@ -13,7 +13,7 @@
         <scene sceneID="kpg-p9-tAg">
             <objects>
                 <navigationController id="xGQ-Ea-AkI" sceneMemberID="viewController">
-                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" misplaced="YES" id="GDF-RD-ecy">
+                    <navigationBar key="navigationBar" hidden="YES" contentMode="scaleToFill" id="GDF-RD-ecy">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -86,20 +86,28 @@
                             </connections>
                         </button>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="United States (+1)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Dri-Vz-4QA">
-                            <rect key="frame" x="0.0" y="17" width="300" height="17"/>
+                            <rect key="frame" x="88" y="17" width="125" height="17"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rectangle85" translatesAutoresizingMaskIntoConstraints="NO" id="Tb1-BV-n15">
+                            <rect key="frame" x="70" y="22" width="10" height="7"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="7" id="aoF-Zw-Nng"/>
+                                <constraint firstAttribute="width" constant="10" id="dxY-WA-r42"/>
+                            </constraints>
+                        </imageView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="Dri-Vz-4QA" firstAttribute="centerY" secondItem="bfp-gh-80v" secondAttribute="centerY" id="F1D-re-zeZ"/>
+                        <constraint firstItem="Dri-Vz-4QA" firstAttribute="centerX" secondItem="HQP-qU-g7D" secondAttribute="centerX" id="AAr-Un-xzJ"/>
+                        <constraint firstItem="Tb1-BV-n15" firstAttribute="centerY" secondItem="Dri-Vz-4QA" secondAttribute="centerY" id="F1S-Yq-iU0"/>
                         <constraint firstItem="bfp-gh-80v" firstAttribute="top" secondItem="HQP-qU-g7D" secondAttribute="top" id="Gal-ld-ghl"/>
-                        <constraint firstAttribute="trailing" secondItem="Dri-Vz-4QA" secondAttribute="trailing" id="JkU-Bx-UCk"/>
-                        <constraint firstItem="Dri-Vz-4QA" firstAttribute="centerX" secondItem="HQP-qU-g7D" secondAttribute="centerX" id="RB5-Sv-gBk"/>
+                        <constraint firstItem="Tb1-BV-n15" firstAttribute="centerY" secondItem="bfp-gh-80v" secondAttribute="centerY" id="Zqg-8e-ZWz"/>
+                        <constraint firstItem="Dri-Vz-4QA" firstAttribute="leading" secondItem="Tb1-BV-n15" secondAttribute="trailing" constant="8" id="b0a-nE-L3h"/>
+                        <constraint firstItem="Dri-Vz-4QA" firstAttribute="centerY" secondItem="bfp-gh-80v" secondAttribute="centerY" id="g4l-TR-Twd"/>
                         <constraint firstAttribute="bottom" secondItem="bfp-gh-80v" secondAttribute="bottom" constant="19" id="jXC-jN-PE1"/>
                         <constraint firstAttribute="trailing" secondItem="bfp-gh-80v" secondAttribute="trailing" constant="14" id="pHZ-6d-KFN"/>
-                        <constraint firstItem="Dri-Vz-4QA" firstAttribute="leading" secondItem="HQP-qU-g7D" secondAttribute="leading" id="quD-uR-aPQ"/>
                     </constraints>
                 </view>
             </objects>
@@ -219,5 +227,6 @@
     </scenes>
     <resources>
         <image name="pinkNext" width="49" height="49"/>
+        <image name="rectangle85" width="10" height="7"/>
     </resources>
 </document>
