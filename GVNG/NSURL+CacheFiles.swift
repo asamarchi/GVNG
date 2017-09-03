@@ -1,6 +1,6 @@
 //
 //  NSURL+CacheFiles.swift
-
+//
 //  Copyright © 2017 Gvng Gvng. All rights reserved.
 //
 
