@@ -1,7 +1,7 @@
 //
 //  Instantiable.swift
 //
-//  Copyright © 2016 PGA Americas. All rights reserved.
+//  Copyright © 2017 Gvng Gvng. All rights reserved.
 //
 
 import UIKit

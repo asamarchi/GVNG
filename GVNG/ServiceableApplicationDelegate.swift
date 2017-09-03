@@ -1,7 +1,7 @@
 //
 //  ServiceableApplicationDelegate.swift
 //
-//  Copyright © 2017 PGA Americas. All rights reserved.
+//  Copyright © 2017 Gvng Gvng. All rights reserved.
 //
 
 public protocol GVNGAppService: UIApplicationDelegate { }
