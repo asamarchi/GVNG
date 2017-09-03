@@ -13,7 +13,6 @@
 		D60DFDB01F58E0E0000A7241 /* GTMSessionFetcher.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60DFDAF1F58E0E0000A7241 /* GTMSessionFetcher.framework */; };
 		D60DFDB21F58E0FC000A7241 /* nanopb.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60DFDB11F58E0FC000A7241 /* nanopb.framework */; };
 		D61486BC1F58D03900FDF8A8 /* GVNGAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61486BB1F58D03900FDF8A8 /* GVNGAppDelegate.swift */; };
-		D61486BE1F58D03900FDF8A8 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61486BD1F58D03900FDF8A8 /* ViewController.swift */; };
 		D61486C11F58D03900FDF8A8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61486BF1F58D03900FDF8A8 /* Main.storyboard */; };
 		D61486C31F58D03900FDF8A8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D61486C21F58D03900FDF8A8 /* Assets.xcassets */; };
 		D61486C61F58D03900FDF8A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D61486C41F58D03900FDF8A8 /* LaunchScreen.storyboard */; };
@@ -70,7 +69,6 @@
 		D65798851F5CA2DD00C67CF3 /* SilentCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798641F5CA2DD00C67CF3 /* SilentCondition.swift */; };
 		D65798861F5CA2DD00C67CF3 /* TimeoutObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798651F5CA2DD00C67CF3 /* TimeoutObserver.swift */; };
 		D65798871F5CA2DD00C67CF3 /* URLSessionTaskOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798661F5CA2DD00C67CF3 /* URLSessionTaskOperation.swift */; };
-		D657988A1F5CA72000C67CF3 /* SpotifyAuthenticationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798891F5CA72000C67CF3 /* SpotifyAuthenticationOperation.swift */; };
 		D6DA647E1F5B0C1B0086E661 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */; };
 		D6DA64891F5B0FBA0086E661 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64861F5B0FBA0086E661 /* SpotifyAudioPlayback.framework */; };
 		D6DA648A1F5B0FBA0086E661 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64871F5B0FBA0086E661 /* SpotifyAuthentication.framework */; };
@@ -92,7 +90,6 @@
 		D60DFDB31F58E23F000A7241 /* GVNG-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVNG-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		D61486B81F58D03900FDF8A8 /* GVNG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GVNG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61486BB1F58D03900FDF8A8 /* GVNGAppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GVNGAppDelegate.swift; sourceTree = "<group>"; };
-		D61486BD1F58D03900FDF8A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D61486C01F58D03900FDF8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D61486C21F58D03900FDF8A8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D61486C51F58D03900FDF8A8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -152,7 +149,6 @@
 		D65798641F5CA2DD00C67CF3 /* SilentCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilentCondition.swift; sourceTree = "<group>"; };
 		D65798651F5CA2DD00C67CF3 /* TimeoutObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeoutObserver.swift; sourceTree = "<group>"; };
 		D65798661F5CA2DD00C67CF3 /* URLSessionTaskOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionTaskOperation.swift; sourceTree = "<group>"; };
-		D65798891F5CA72000C67CF3 /* SpotifyAuthenticationOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyAuthenticationOperation.swift; sourceTree = "<group>"; };
 		D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		D6DA64861F5B0FBA0086E661 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
 		D6DA64871F5B0FBA0086E661 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
@@ -229,7 +225,6 @@
 				D619DC531F5B905A00CA0E83 /* Protocols */,
 				D619DC551F5B907300CA0E83 /* Managers */,
 				D619DC5B1F5B911C00CA0E83 /* Resources */,
-				D61486BD1F58D03900FDF8A8 /* ViewController.swift */,
 			);
 			path = GVNG;
 			sourceTree = "<group>";
@@ -406,7 +401,6 @@
 		D65798881F5CA71000C67CF3 /* Custom Operations */ = {
 			isa = PBXGroup;
 			children = (
-				D65798891F5CA72000C67CF3 /* SpotifyAuthenticationOperation.swift */,
 			);
 			name = "Custom Operations";
 			sourceTree = "<group>";
@@ -563,7 +557,6 @@
 				D65798711F5CA2DD00C67CF3 /* GroupOperation.swift in Sources */,
 				D657986E1F5CA2DD00C67CF3 /* DependencySuccessCondition.swift in Sources */,
 				D65798681F5CA2DD00C67CF3 /* BlockObserver.swift in Sources */,
-				D61486BE1F58D03900FDF8A8 /* ViewController.swift in Sources */,
 				D65798811F5CA2DD00C67CF3 /* PassbookCondition.swift in Sources */,
 				D65798821F5CA2DD00C67CF3 /* PhotosCondition.swift in Sources */,
 				D65798721F5CA2DD00C67CF3 /* HealthCondition.swift in Sources */,
@@ -575,7 +568,6 @@
 				D657987B1F5CA2DD00C67CF3 /* NSURL+CacheFiles.swift in Sources */,
 				D65798781F5CA2DD00C67CF3 /* NoCancelledDependencies.swift in Sources */,
 				D657987F1F5CA2DD00C67CF3 /* OperationObserver.swift in Sources */,
-				D657988A1F5CA72000C67CF3 /* SpotifyAuthenticationOperation.swift in Sources */,
 				D65798411F5C92C300C67CF3 /* SpotifyAppService.swift in Sources */,
 				D65798691F5CA2DD00C67CF3 /* BlockOperation.swift in Sources */,
 				D65798671F5CA2DD00C67CF3 /* AlertOperation.swift in Sources */,

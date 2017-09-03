@@ -10,10 +10,6 @@ import Foundation
 
 class FirebaseManager {
     
-    struct VerificationID {
-        static let Key = "authVerificationID"
-    }
-    
     static let ref = Database.database().reference()
     
     static func setup() {
@@ -24,14 +20,20 @@ class FirebaseManager {
         Auth.auth().setAPNSToken(deviceToken, type: AuthAPNSTokenType.sandbox)
     }
     
+    static func setFirebaseUserID(fireBaseUserID: String) {
+        UserDefaultsManager.firebaseUserID = fireBaseUserID
+    }
+    
+    static func firebaseUserID() -> String? {
+        return UserDefaultsManager.firebaseUserID
+    }
+    
     static func setVerificationID(verificationID: String) {
-        UserDefaults.standard.set(verificationID, forKey: VerificationID.Key)
+        UserDefaultsManager.verificationID = verificationID
     }
     
     static func verificationID() -> String? {
-        guard let verificationID = UserDefaults.standard.string(forKey: VerificationID.Key) else { return nil }
-        
-        return verificationID
+        return UserDefaultsManager.verificationID
     }
     
     static func verifyPhoneNumber(phoneNumber: String, success: @escaping () -> Swift.Void, failure: @escaping (Error?) -> Swift.Void) {
@@ -57,6 +59,8 @@ class FirebaseManager {
             }
             
             guard let userID = user?.uid else { return }
+            setFirebaseUserID(fireBaseUserID: userID)
+            
             ref.child("users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
                 if let value = snapshot.value as? NSDictionary {
                     //TODO: Redirect to landing page
@@ -77,6 +81,6 @@ class FirebaseManager {
         if Auth.auth().canHandleNotification(userInfo) {
             completionHandler(UIBackgroundFetchResult.noData)
         }
-
+        
     }
 }

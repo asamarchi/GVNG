@@ -23,6 +23,8 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
     
     // MARK: - Properties
     
+    var refHandle: UInt = 0
+    
     // MARK: IBOutlets
     @IBOutlet weak var messageLabel: UILabel!
     @IBOutlet weak var appleMusicButton: UIButton!
@@ -38,6 +40,16 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
         super.viewDidLoad()
         
         applyDesign()
+        
+        guard let firebaseUserID = FirebaseManager.firebaseUserID() else { return }
+        
+        refHandle = FirebaseManager.ref.child("users").child(firebaseUserID).child("spotify").observe(DataEventType.value, with: { (snapshot) in
+            let postDict = snapshot.value as? [String : AnyObject] ?? [:]
+            print(snapshot.value)
+            // check to see if there is a spotify object and/or an apple object from snapshot.value.
+            // if so, update check on button.
+        })
+
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -56,7 +68,11 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
     }
     
     @IBAction func spotifyTapped(_ sender: Any) {
-        spotifyCheck.isHidden = spotifyButton.isSelected
+        
+        SpotifyManager.authenticate()
+
+//        //TODO: Callback show check
+//        spotifyCheck.isHidden = spotifyButton.isSelected
     }
     
     @IBAction func soundCloudTapped(_ sender: Any) {
