@@ -20,6 +20,20 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func spotifyLoginTapped(_ sender: Any) {
+        guard let auth = SpotifyManager.auth() else { return }
+        guard let loginURL = SpotifyManager.loginURL() else { return }
+        
+        if UIApplication.shared.canOpenURL(loginURL) {
+            UIApplication.shared.open(loginURL, completionHandler: { (didOpen) in
+                print("here")
+                print(didOpen)
+                if auth.canHandle(auth.redirectURL) {
+                    print("can handle")
+                }
+            })
+        }
+    }
 
 }
 

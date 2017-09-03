@@ -28,11 +28,19 @@
 		D61486F11F58D59200FDF8A8 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D61486F01F58D59200FDF8A8 /* CFNetwork.framework */; };
 		D61486F31F58D5A100FDF8A8 /* libc++.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D61486F21F58D5A100FDF8A8 /* libc++.tbd */; };
 		D61486F51F58D5A800FDF8A8 /* libicucore.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = D61486F41F58D5A800FDF8A8 /* libicucore.tbd */; };
+		D6152E491F5B4F7E00078D09 /* LoginPhoneNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6152E481F5B4F7E00078D09 /* LoginPhoneNumberViewController.swift */; };
+		D619DC4E1F5B761000CA0E83 /* LoginErrorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619DC4D1F5B761000CA0E83 /* LoginErrorViewController.swift */; };
+		D619DC501F5B78DD00CA0E83 /* Instantiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619DC4F1F5B78DD00CA0E83 /* Instantiable.swift */; };
+		D619DC521F5B7EC600CA0E83 /* LoginVerificationCodeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D619DC511F5B7EC600CA0E83 /* LoginVerificationCodeViewController.swift */; };
 		D6DA647E1F5B0C1B0086E661 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */; };
 		D6DA64891F5B0FBA0086E661 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64861F5B0FBA0086E661 /* SpotifyAudioPlayback.framework */; };
 		D6DA648A1F5B0FBA0086E661 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64871F5B0FBA0086E661 /* SpotifyAuthentication.framework */; };
 		D6DA648B1F5B0FBA0086E661 /* SpotifyMetadata.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64881F5B0FBA0086E661 /* SpotifyMetadata.framework */; };
 		D6DA64911F5B246D0086E661 /* GoogleToolboxForMac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64901F5B246D0086E661 /* GoogleToolboxForMac.framework */; };
+		D6DA64931F5B26190086E661 /* SpotifyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA64921F5B26190086E661 /* SpotifyManager.swift */; };
+		D6E37E8F1F5B4B79004C0DBE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E37E8E1F5B4B79004C0DBE /* Login.storyboard */; };
+		D6E37E911F5B4CFE004C0DBE /* UIFont+Gvng.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E37E901F5B4CFE004C0DBE /* UIFont+Gvng.swift */; };
+		D6E37E931F5B4D10004C0DBE /* UIColor+Gvng.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E37E921F5B4D10004C0DBE /* UIColor+Gvng.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,7 +49,7 @@
 		D60DFDAD1F58E0C7000A7241 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "leveldb-library.framework"; sourceTree = "<group>"; };
 		D60DFDAF1F58E0E0000A7241 /* GTMSessionFetcher.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GTMSessionFetcher.framework; sourceTree = "<group>"; };
 		D60DFDB11F58E0FC000A7241 /* nanopb.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = nanopb.framework; sourceTree = "<group>"; };
-		D60DFDB31F58E23F000A7241 /* GVNG-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVNG-Bridging-Header.h"; sourceTree = "<group>"; };
+		D60DFDB31F58E23F000A7241 /* GVNG-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GVNG-Bridging-Header.h"; sourceTree = SOURCE_ROOT; };
 		D61486B81F58D03900FDF8A8 /* GVNG.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GVNG.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D61486BB1F58D03900FDF8A8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D61486BD1F58D03900FDF8A8 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -62,6 +70,10 @@
 		D61486F01F58D59200FDF8A8 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		D61486F21F58D5A100FDF8A8 /* libc++.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = "libc++.tbd"; path = "usr/lib/libc++.tbd"; sourceTree = SDKROOT; };
 		D61486F41F58D5A800FDF8A8 /* libicucore.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libicucore.tbd; path = usr/lib/libicucore.tbd; sourceTree = SDKROOT; };
+		D6152E481F5B4F7E00078D09 /* LoginPhoneNumberViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginPhoneNumberViewController.swift; sourceTree = "<group>"; };
+		D619DC4D1F5B761000CA0E83 /* LoginErrorViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginErrorViewController.swift; sourceTree = "<group>"; };
+		D619DC4F1F5B78DD00CA0E83 /* Instantiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Instantiable.swift; sourceTree = "<group>"; };
+		D619DC511F5B7EC600CA0E83 /* LoginVerificationCodeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginVerificationCodeViewController.swift; sourceTree = "<group>"; };
 		D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		D6DA64861F5B0FBA0086E661 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
 		D6DA64871F5B0FBA0086E661 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
@@ -69,6 +81,11 @@
 		D6DA648C1F5B22100086E661 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
 		D6DA648E1F5B223B0086E661 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		D6DA64901F5B246D0086E661 /* GoogleToolboxForMac.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleToolboxForMac.framework; sourceTree = "<group>"; };
+		D6DA64921F5B26190086E661 /* SpotifyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyManager.swift; sourceTree = "<group>"; };
+		D6DA64991F5B3C970086E661 /* GVNG.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = GVNG.entitlements; sourceTree = "<group>"; };
+		D6E37E8E1F5B4B79004C0DBE /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		D6E37E901F5B4CFE004C0DBE /* UIFont+Gvng.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Gvng.swift"; sourceTree = "<group>"; };
+		D6E37E921F5B4D10004C0DBE /* UIColor+Gvng.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Gvng.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,7 +121,6 @@
 		D61486AF1F58D03900FDF8A8 = {
 			isa = PBXGroup;
 			children = (
-				D60DFDB31F58E23F000A7241 /* GVNG-Bridging-Header.h */,
 				D61486BA1F58D03900FDF8A8 /* GVNG */,
 				D61486B91F58D03900FDF8A8 /* Products */,
 				D6DA64801F5B0F8D0086E661 /* Dependencies */,
@@ -124,12 +140,13 @@
 			isa = PBXGroup;
 			children = (
 				D61486BB1F58D03900FDF8A8 /* AppDelegate.swift */,
-				D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */,
+				D6DA64991F5B3C970086E661 /* GVNG.entitlements */,
+				D619DC591F5B90D400CA0E83 /* App Sections */,
+				D619DC541F5B906A00CA0E83 /* Extensions */,
+				D619DC531F5B905A00CA0E83 /* Protocols */,
+				D619DC551F5B907300CA0E83 /* Managers */,
+				D619DC5B1F5B911C00CA0E83 /* Resources */,
 				D61486BD1F58D03900FDF8A8 /* ViewController.swift */,
-				D61486BF1F58D03900FDF8A8 /* Main.storyboard */,
-				D61486C21F58D03900FDF8A8 /* Assets.xcassets */,
-				D61486C41F58D03900FDF8A8 /* LaunchScreen.storyboard */,
-				D61486C71F58D03900FDF8A8 /* Info.plist */,
 			);
 			path = GVNG;
 			sourceTree = "<group>";
@@ -193,6 +210,95 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D619DC531F5B905A00CA0E83 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				D619DC4F1F5B78DD00CA0E83 /* Instantiable.swift */,
+			);
+			name = Protocols;
+			sourceTree = "<group>";
+		};
+		D619DC541F5B906A00CA0E83 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				D6E37E901F5B4CFE004C0DBE /* UIFont+Gvng.swift */,
+				D6E37E921F5B4D10004C0DBE /* UIColor+Gvng.swift */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		D619DC551F5B907300CA0E83 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */,
+				D6DA64921F5B26190086E661 /* SpotifyManager.swift */,
+			);
+			name = Managers;
+			sourceTree = "<group>";
+		};
+		D619DC561F5B908000CA0E83 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		D619DC571F5B908900CA0E83 /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "View Models";
+			sourceTree = "<group>";
+		};
+		D619DC581F5B90CC00CA0E83 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D6152E481F5B4F7E00078D09 /* LoginPhoneNumberViewController.swift */,
+				D619DC511F5B7EC600CA0E83 /* LoginVerificationCodeViewController.swift */,
+				D619DC4D1F5B761000CA0E83 /* LoginErrorViewController.swift */,
+			);
+			name = "View Controllers";
+			sourceTree = "<group>";
+		};
+		D619DC591F5B90D400CA0E83 /* App Sections */ = {
+			isa = PBXGroup;
+			children = (
+				D619DC5A1F5B90F100CA0E83 /* Login */,
+			);
+			name = "App Sections";
+			sourceTree = "<group>";
+		};
+		D619DC5A1F5B90F100CA0E83 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				D619DC561F5B908000CA0E83 /* Views */,
+				D619DC571F5B908900CA0E83 /* View Models */,
+				D619DC581F5B90CC00CA0E83 /* View Controllers */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		D619DC5B1F5B911C00CA0E83 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				D61486C71F58D03900FDF8A8 /* Info.plist */,
+				D60DFDB31F58E23F000A7241 /* GVNG-Bridging-Header.h */,
+				D61486C21F58D03900FDF8A8 /* Assets.xcassets */,
+				D619DC5C1F5B913700CA0E83 /* Storyboards */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		D619DC5C1F5B913700CA0E83 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D61486BF1F58D03900FDF8A8 /* Main.storyboard */,
+				D6E37E8E1F5B4B79004C0DBE /* Login.storyboard */,
+				D61486C41F58D03900FDF8A8 /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
+			sourceTree = "<group>";
+		};
 		D6DA647F1F5B0F810086E661 /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
@@ -247,6 +353,11 @@
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 66WC295E7G;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -276,6 +387,7 @@
 				D61486C61F58D03900FDF8A8 /* LaunchScreen.storyboard in Resources */,
 				D61486CE1F58D03E00FDF8A8 /* GoogleService-Info.plist in Resources */,
 				D61486C31F58D03900FDF8A8 /* Assets.xcassets in Resources */,
+				D6E37E8F1F5B4B79004C0DBE /* Login.storyboard in Resources */,
 				D61486C11F58D03900FDF8A8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,8 +399,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D619DC521F5B7EC600CA0E83 /* LoginVerificationCodeViewController.swift in Sources */,
+				D6DA64931F5B26190086E661 /* SpotifyManager.swift in Sources */,
 				D6DA647E1F5B0C1B0086E661 /* FirebaseManager.swift in Sources */,
 				D61486BE1F58D03900FDF8A8 /* ViewController.swift in Sources */,
+				D619DC4E1F5B761000CA0E83 /* LoginErrorViewController.swift in Sources */,
+				D6E37E931F5B4D10004C0DBE /* UIColor+Gvng.swift in Sources */,
+				D6E37E911F5B4CFE004C0DBE /* UIFont+Gvng.swift in Sources */,
+				D6152E491F5B4F7E00078D09 /* LoginPhoneNumberViewController.swift in Sources */,
+				D619DC501F5B78DD00CA0E83 /* Instantiable.swift in Sources */,
 				D61486BC1F58D03900FDF8A8 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -416,6 +535,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GVNG/GVNG.entitlements;
 				DEVELOPMENT_TEAM = 66WC295E7G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -435,6 +555,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = GVNG/GVNG.entitlements;
 				DEVELOPMENT_TEAM = 66WC295E7G;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",

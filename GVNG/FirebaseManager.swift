@@ -10,9 +10,52 @@ import Foundation
 
 class FirebaseManager {
     
+    struct VerificationID {
+        static let Key = "authVerificationID"
+    }
+    
     static let ref = Database.database().reference()
     
     static func setup() {
         FirebaseApp.configure()
+    }
+    
+    static func setAPNSToken(deviceToken: Data) {
+        Auth.auth().setAPNSToken(deviceToken, type: AuthAPNSTokenType.sandbox)
+    }
+    
+    static func setVerificationID(verificationID: String) {
+        UserDefaults.standard.set(verificationID, forKey: VerificationID.Key)
+    }
+    
+    static func verificationID() -> String? {
+        guard let verificationID = UserDefaults.standard.string(forKey: VerificationID.Key) else { return nil }
+        
+        return verificationID
+    }
+    
+    static func verifyPhoneNumber(phoneNumber: String, success: @escaping () -> Swift.Void, failure: @escaping (Error?) -> Swift.Void) {
+        PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber) { (verificationID, error) in
+            if error != nil {
+                failure(error)
+            }
+            
+            guard let verificationID = verificationID else { return }
+            
+            setVerificationID(verificationID: verificationID)
+            success()
+        }
+    }
+    
+    static func signIn(withVerificationCode: String, success: @escaping (User?) -> Swift.Void, failure: @escaping (Error?) -> Swift.Void) {
+        guard let verficationID = FirebaseManager.verificationID() else { return }
+        let credential = PhoneAuthProvider.provider().credential(withVerificationID: verficationID, verificationCode: withVerificationCode)
+        
+        Auth.auth().signIn(with: credential) { (user, error) in
+            if error != nil {
+                failure(error)
+            }
+            success(user)
+        }
     }
 }
