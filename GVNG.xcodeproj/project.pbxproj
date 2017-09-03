@@ -37,6 +37,40 @@
 		D657983F1F5C925B00C67CF3 /* FirebaseAppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657983E1F5C925B00C67CF3 /* FirebaseAppService.swift */; };
 		D65798411F5C92C300C67CF3 /* SpotifyAppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798401F5C92C300C67CF3 /* SpotifyAppService.swift */; };
 		D65798431F5C92ED00C67CF3 /* PushNotificationsAppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798421F5C92ED00C67CF3 /* PushNotificationsAppService.swift */; };
+		D65798671F5CA2DD00C67CF3 /* AlertOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798461F5CA2DD00C67CF3 /* AlertOperation.swift */; };
+		D65798681F5CA2DD00C67CF3 /* BlockObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798471F5CA2DD00C67CF3 /* BlockObserver.swift */; };
+		D65798691F5CA2DD00C67CF3 /* BlockOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798481F5CA2DD00C67CF3 /* BlockOperation.swift */; };
+		D657986A1F5CA2DD00C67CF3 /* CalendarCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798491F5CA2DD00C67CF3 /* CalendarCondition.swift */; };
+		D657986B1F5CA2DD00C67CF3 /* CKContainer+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657984A1F5CA2DD00C67CF3 /* CKContainer+Operations.swift */; };
+		D657986C1F5CA2DD00C67CF3 /* CloudCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657984B1F5CA2DD00C67CF3 /* CloudCondition.swift */; };
+		D657986D1F5CA2DD00C67CF3 /* DelayOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657984C1F5CA2DD00C67CF3 /* DelayOperation.swift */; };
+		D657986E1F5CA2DD00C67CF3 /* DependencySuccessCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657984D1F5CA2DD00C67CF3 /* DependencySuccessCondition.swift */; };
+		D657986F1F5CA2DD00C67CF3 /* Dictionary+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657984E1F5CA2DD00C67CF3 /* Dictionary+Operations.swift */; };
+		D65798701F5CA2DD00C67CF3 /* ExclusivityController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657984F1F5CA2DD00C67CF3 /* ExclusivityController.swift */; };
+		D65798711F5CA2DD00C67CF3 /* GroupOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798501F5CA2DD00C67CF3 /* GroupOperation.swift */; };
+		D65798721F5CA2DD00C67CF3 /* HealthCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798511F5CA2DD00C67CF3 /* HealthCondition.swift */; };
+		D65798731F5CA2DD00C67CF3 /* LocationCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798521F5CA2DD00C67CF3 /* LocationCondition.swift */; };
+		D65798741F5CA2DD00C67CF3 /* LocationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798531F5CA2DD00C67CF3 /* LocationOperation.swift */; };
+		D65798751F5CA2DD00C67CF3 /* MutuallyExclusive.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798541F5CA2DD00C67CF3 /* MutuallyExclusive.swift */; };
+		D65798761F5CA2DD00C67CF3 /* NegatedCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798551F5CA2DD00C67CF3 /* NegatedCondition.swift */; };
+		D65798771F5CA2DD00C67CF3 /* NetworkObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798561F5CA2DD00C67CF3 /* NetworkObserver.swift */; };
+		D65798781F5CA2DD00C67CF3 /* NoCancelledDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798571F5CA2DD00C67CF3 /* NoCancelledDependencies.swift */; };
+		D65798791F5CA2DD00C67CF3 /* NSLock+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798581F5CA2DD00C67CF3 /* NSLock+Operations.swift */; };
+		D657987A1F5CA2DD00C67CF3 /* NSOperation+Operations.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798591F5CA2DD00C67CF3 /* NSOperation+Operations.swift */; };
+		D657987B1F5CA2DD00C67CF3 /* NSURL+CacheFiles.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657985A1F5CA2DD00C67CF3 /* NSURL+CacheFiles.swift */; };
+		D657987C1F5CA2DD00C67CF3 /* Operation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657985B1F5CA2DD00C67CF3 /* Operation.swift */; };
+		D657987D1F5CA2DD00C67CF3 /* OperationCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657985C1F5CA2DD00C67CF3 /* OperationCondition.swift */; };
+		D657987E1F5CA2DD00C67CF3 /* OperationErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657985D1F5CA2DD00C67CF3 /* OperationErrors.swift */; };
+		D657987F1F5CA2DD00C67CF3 /* OperationObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657985E1F5CA2DD00C67CF3 /* OperationObserver.swift */; };
+		D65798801F5CA2DD00C67CF3 /* OperationQueue.swift in Sources */ = {isa = PBXBuildFile; fileRef = D657985F1F5CA2DD00C67CF3 /* OperationQueue.swift */; };
+		D65798811F5CA2DD00C67CF3 /* PassbookCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798601F5CA2DD00C67CF3 /* PassbookCondition.swift */; };
+		D65798821F5CA2DD00C67CF3 /* PhotosCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798611F5CA2DD00C67CF3 /* PhotosCondition.swift */; };
+		D65798831F5CA2DD00C67CF3 /* ReachabilityCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798621F5CA2DD00C67CF3 /* ReachabilityCondition.swift */; };
+		D65798841F5CA2DD00C67CF3 /* RemoteNotificationCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798631F5CA2DD00C67CF3 /* RemoteNotificationCondition.swift */; };
+		D65798851F5CA2DD00C67CF3 /* SilentCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798641F5CA2DD00C67CF3 /* SilentCondition.swift */; };
+		D65798861F5CA2DD00C67CF3 /* TimeoutObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798651F5CA2DD00C67CF3 /* TimeoutObserver.swift */; };
+		D65798871F5CA2DD00C67CF3 /* URLSessionTaskOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798661F5CA2DD00C67CF3 /* URLSessionTaskOperation.swift */; };
+		D657988A1F5CA72000C67CF3 /* SpotifyAuthenticationOperation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65798891F5CA72000C67CF3 /* SpotifyAuthenticationOperation.swift */; };
 		D6DA647E1F5B0C1B0086E661 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */; };
 		D6DA64891F5B0FBA0086E661 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64861F5B0FBA0086E661 /* SpotifyAudioPlayback.framework */; };
 		D6DA648A1F5B0FBA0086E661 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64871F5B0FBA0086E661 /* SpotifyAuthentication.framework */; };
@@ -46,6 +80,7 @@
 		D6E37E8F1F5B4B79004C0DBE /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6E37E8E1F5B4B79004C0DBE /* Login.storyboard */; };
 		D6E37E911F5B4CFE004C0DBE /* UIFont+Gvng.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E37E901F5B4CFE004C0DBE /* UIFont+Gvng.swift */; };
 		D6E37E931F5B4D10004C0DBE /* UIColor+Gvng.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E37E921F5B4D10004C0DBE /* UIColor+Gvng.swift */; };
+		D6E3A9E41F5CBFFC005D00D4 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3A9E31F5CBFFC005D00D4 /* UserDefaultsManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +119,40 @@
 		D657983E1F5C925B00C67CF3 /* FirebaseAppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAppService.swift; sourceTree = "<group>"; };
 		D65798401F5C92C300C67CF3 /* SpotifyAppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyAppService.swift; sourceTree = "<group>"; };
 		D65798421F5C92ED00C67CF3 /* PushNotificationsAppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushNotificationsAppService.swift; sourceTree = "<group>"; };
+		D65798461F5CA2DD00C67CF3 /* AlertOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertOperation.swift; sourceTree = "<group>"; };
+		D65798471F5CA2DD00C67CF3 /* BlockObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockObserver.swift; sourceTree = "<group>"; };
+		D65798481F5CA2DD00C67CF3 /* BlockOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlockOperation.swift; sourceTree = "<group>"; };
+		D65798491F5CA2DD00C67CF3 /* CalendarCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarCondition.swift; sourceTree = "<group>"; };
+		D657984A1F5CA2DD00C67CF3 /* CKContainer+Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CKContainer+Operations.swift"; sourceTree = "<group>"; };
+		D657984B1F5CA2DD00C67CF3 /* CloudCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CloudCondition.swift; sourceTree = "<group>"; };
+		D657984C1F5CA2DD00C67CF3 /* DelayOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DelayOperation.swift; sourceTree = "<group>"; };
+		D657984D1F5CA2DD00C67CF3 /* DependencySuccessCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DependencySuccessCondition.swift; sourceTree = "<group>"; };
+		D657984E1F5CA2DD00C67CF3 /* Dictionary+Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Dictionary+Operations.swift"; sourceTree = "<group>"; };
+		D657984F1F5CA2DD00C67CF3 /* ExclusivityController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExclusivityController.swift; sourceTree = "<group>"; };
+		D65798501F5CA2DD00C67CF3 /* GroupOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GroupOperation.swift; sourceTree = "<group>"; };
+		D65798511F5CA2DD00C67CF3 /* HealthCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HealthCondition.swift; sourceTree = "<group>"; };
+		D65798521F5CA2DD00C67CF3 /* LocationCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationCondition.swift; sourceTree = "<group>"; };
+		D65798531F5CA2DD00C67CF3 /* LocationOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationOperation.swift; sourceTree = "<group>"; };
+		D65798541F5CA2DD00C67CF3 /* MutuallyExclusive.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MutuallyExclusive.swift; sourceTree = "<group>"; };
+		D65798551F5CA2DD00C67CF3 /* NegatedCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NegatedCondition.swift; sourceTree = "<group>"; };
+		D65798561F5CA2DD00C67CF3 /* NetworkObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkObserver.swift; sourceTree = "<group>"; };
+		D65798571F5CA2DD00C67CF3 /* NoCancelledDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCancelledDependencies.swift; sourceTree = "<group>"; };
+		D65798581F5CA2DD00C67CF3 /* NSLock+Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSLock+Operations.swift"; sourceTree = "<group>"; };
+		D65798591F5CA2DD00C67CF3 /* NSOperation+Operations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSOperation+Operations.swift"; sourceTree = "<group>"; };
+		D657985A1F5CA2DD00C67CF3 /* NSURL+CacheFiles.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSURL+CacheFiles.swift"; sourceTree = "<group>"; };
+		D657985B1F5CA2DD00C67CF3 /* Operation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Operation.swift; sourceTree = "<group>"; };
+		D657985C1F5CA2DD00C67CF3 /* OperationCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationCondition.swift; sourceTree = "<group>"; };
+		D657985D1F5CA2DD00C67CF3 /* OperationErrors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationErrors.swift; sourceTree = "<group>"; };
+		D657985E1F5CA2DD00C67CF3 /* OperationObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationObserver.swift; sourceTree = "<group>"; };
+		D657985F1F5CA2DD00C67CF3 /* OperationQueue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OperationQueue.swift; sourceTree = "<group>"; };
+		D65798601F5CA2DD00C67CF3 /* PassbookCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PassbookCondition.swift; sourceTree = "<group>"; };
+		D65798611F5CA2DD00C67CF3 /* PhotosCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotosCondition.swift; sourceTree = "<group>"; };
+		D65798621F5CA2DD00C67CF3 /* ReachabilityCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityCondition.swift; sourceTree = "<group>"; };
+		D65798631F5CA2DD00C67CF3 /* RemoteNotificationCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RemoteNotificationCondition.swift; sourceTree = "<group>"; };
+		D65798641F5CA2DD00C67CF3 /* SilentCondition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SilentCondition.swift; sourceTree = "<group>"; };
+		D65798651F5CA2DD00C67CF3 /* TimeoutObserver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimeoutObserver.swift; sourceTree = "<group>"; };
+		D65798661F5CA2DD00C67CF3 /* URLSessionTaskOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = URLSessionTaskOperation.swift; sourceTree = "<group>"; };
+		D65798891F5CA72000C67CF3 /* SpotifyAuthenticationOperation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpotifyAuthenticationOperation.swift; sourceTree = "<group>"; };
 		D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		D6DA64861F5B0FBA0086E661 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
 		D6DA64871F5B0FBA0086E661 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
@@ -96,6 +165,7 @@
 		D6E37E8E1F5B4B79004C0DBE /* Login.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
 		D6E37E901F5B4CFE004C0DBE /* UIFont+Gvng.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Gvng.swift"; sourceTree = "<group>"; };
 		D6E37E921F5B4D10004C0DBE /* UIColor+Gvng.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Gvng.swift"; sourceTree = "<group>"; };
+		D6E3A9E31F5CBFFC005D00D4 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -149,10 +219,11 @@
 		D61486BA1F58D03900FDF8A8 /* GVNG */ = {
 			isa = PBXGroup;
 			children = (
+				D6DA64991F5B3C970086E661 /* GVNG.entitlements */,
 				D619DC5F1F5C8FA100CA0E83 /* ServiceableApplicationDelegate.swift */,
 				D61486BB1F58D03900FDF8A8 /* GVNGAppDelegate.swift */,
+				D65798451F5CA2AD00C67CF3 /* Operations */,
 				D65798441F5CA12D00C67CF3 /* AppServices */,
-				D6DA64991F5B3C970086E661 /* GVNG.entitlements */,
 				D619DC591F5B90D400CA0E83 /* App Sections */,
 				D619DC541F5B906A00CA0E83 /* Extensions */,
 				D619DC531F5B905A00CA0E83 /* Protocols */,
@@ -242,6 +313,7 @@
 		D619DC551F5B907300CA0E83 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				D6E3A9E31F5CBFFC005D00D4 /* UserDefaultsManager.swift */,
 				D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */,
 				D6DA64921F5B26190086E661 /* SpotifyManager.swift */,
 			);
@@ -320,6 +392,63 @@
 				D65798421F5C92ED00C67CF3 /* PushNotificationsAppService.swift */,
 			);
 			name = AppServices;
+			sourceTree = "<group>";
+		};
+		D65798451F5CA2AD00C67CF3 /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				D65798881F5CA71000C67CF3 /* Custom Operations */,
+				D657988B1F5CA7D500C67CF3 /* Basic Operations */,
+			);
+			name = Operations;
+			sourceTree = "<group>";
+		};
+		D65798881F5CA71000C67CF3 /* Custom Operations */ = {
+			isa = PBXGroup;
+			children = (
+				D65798891F5CA72000C67CF3 /* SpotifyAuthenticationOperation.swift */,
+			);
+			name = "Custom Operations";
+			sourceTree = "<group>";
+		};
+		D657988B1F5CA7D500C67CF3 /* Basic Operations */ = {
+			isa = PBXGroup;
+			children = (
+				D65798461F5CA2DD00C67CF3 /* AlertOperation.swift */,
+				D65798471F5CA2DD00C67CF3 /* BlockObserver.swift */,
+				D65798481F5CA2DD00C67CF3 /* BlockOperation.swift */,
+				D65798491F5CA2DD00C67CF3 /* CalendarCondition.swift */,
+				D657984A1F5CA2DD00C67CF3 /* CKContainer+Operations.swift */,
+				D657984B1F5CA2DD00C67CF3 /* CloudCondition.swift */,
+				D657984C1F5CA2DD00C67CF3 /* DelayOperation.swift */,
+				D657984D1F5CA2DD00C67CF3 /* DependencySuccessCondition.swift */,
+				D657984E1F5CA2DD00C67CF3 /* Dictionary+Operations.swift */,
+				D657984F1F5CA2DD00C67CF3 /* ExclusivityController.swift */,
+				D65798501F5CA2DD00C67CF3 /* GroupOperation.swift */,
+				D65798511F5CA2DD00C67CF3 /* HealthCondition.swift */,
+				D65798521F5CA2DD00C67CF3 /* LocationCondition.swift */,
+				D65798531F5CA2DD00C67CF3 /* LocationOperation.swift */,
+				D65798541F5CA2DD00C67CF3 /* MutuallyExclusive.swift */,
+				D65798551F5CA2DD00C67CF3 /* NegatedCondition.swift */,
+				D65798561F5CA2DD00C67CF3 /* NetworkObserver.swift */,
+				D65798571F5CA2DD00C67CF3 /* NoCancelledDependencies.swift */,
+				D65798581F5CA2DD00C67CF3 /* NSLock+Operations.swift */,
+				D65798591F5CA2DD00C67CF3 /* NSOperation+Operations.swift */,
+				D657985A1F5CA2DD00C67CF3 /* NSURL+CacheFiles.swift */,
+				D657985B1F5CA2DD00C67CF3 /* Operation.swift */,
+				D657985C1F5CA2DD00C67CF3 /* OperationCondition.swift */,
+				D657985D1F5CA2DD00C67CF3 /* OperationErrors.swift */,
+				D657985E1F5CA2DD00C67CF3 /* OperationObserver.swift */,
+				D657985F1F5CA2DD00C67CF3 /* OperationQueue.swift */,
+				D65798601F5CA2DD00C67CF3 /* PassbookCondition.swift */,
+				D65798611F5CA2DD00C67CF3 /* PhotosCondition.swift */,
+				D65798621F5CA2DD00C67CF3 /* ReachabilityCondition.swift */,
+				D65798631F5CA2DD00C67CF3 /* RemoteNotificationCondition.swift */,
+				D65798641F5CA2DD00C67CF3 /* SilentCondition.swift */,
+				D65798651F5CA2DD00C67CF3 /* TimeoutObserver.swift */,
+				D65798661F5CA2DD00C67CF3 /* URLSessionTaskOperation.swift */,
+			);
+			name = "Basic Operations";
 			sourceTree = "<group>";
 		};
 		D6DA647F1F5B0F810086E661 /* Spotify */ = {
@@ -424,19 +553,54 @@
 			files = (
 				D65798431F5C92ED00C67CF3 /* PushNotificationsAppService.swift in Sources */,
 				D619DC521F5B7EC600CA0E83 /* LoginVerificationCodeViewController.swift in Sources */,
+				D657987C1F5CA2DD00C67CF3 /* Operation.swift in Sources */,
+				D65798771F5CA2DD00C67CF3 /* NetworkObserver.swift in Sources */,
+				D65798731F5CA2DD00C67CF3 /* LocationCondition.swift in Sources */,
 				D6DA64931F5B26190086E661 /* SpotifyManager.swift in Sources */,
+				D657986F1F5CA2DD00C67CF3 /* Dictionary+Operations.swift in Sources */,
+				D657987E1F5CA2DD00C67CF3 /* OperationErrors.swift in Sources */,
 				D6DA647E1F5B0C1B0086E661 /* FirebaseManager.swift in Sources */,
+				D65798711F5CA2DD00C67CF3 /* GroupOperation.swift in Sources */,
+				D657986E1F5CA2DD00C67CF3 /* DependencySuccessCondition.swift in Sources */,
+				D65798681F5CA2DD00C67CF3 /* BlockObserver.swift in Sources */,
 				D61486BE1F58D03900FDF8A8 /* ViewController.swift in Sources */,
+				D65798811F5CA2DD00C67CF3 /* PassbookCondition.swift in Sources */,
+				D65798821F5CA2DD00C67CF3 /* PhotosCondition.swift in Sources */,
+				D65798721F5CA2DD00C67CF3 /* HealthCondition.swift in Sources */,
 				D619DC4E1F5B761000CA0E83 /* LoginErrorViewController.swift in Sources */,
+				D65798861F5CA2DD00C67CF3 /* TimeoutObserver.swift in Sources */,
+				D657986B1F5CA2DD00C67CF3 /* CKContainer+Operations.swift in Sources */,
+				D65798871F5CA2DD00C67CF3 /* URLSessionTaskOperation.swift in Sources */,
 				D6E37E931F5B4D10004C0DBE /* UIColor+Gvng.swift in Sources */,
+				D657987B1F5CA2DD00C67CF3 /* NSURL+CacheFiles.swift in Sources */,
+				D65798781F5CA2DD00C67CF3 /* NoCancelledDependencies.swift in Sources */,
+				D657987F1F5CA2DD00C67CF3 /* OperationObserver.swift in Sources */,
+				D657988A1F5CA72000C67CF3 /* SpotifyAuthenticationOperation.swift in Sources */,
 				D65798411F5C92C300C67CF3 /* SpotifyAppService.swift in Sources */,
+				D65798691F5CA2DD00C67CF3 /* BlockOperation.swift in Sources */,
+				D65798671F5CA2DD00C67CF3 /* AlertOperation.swift in Sources */,
+				D65798741F5CA2DD00C67CF3 /* LocationOperation.swift in Sources */,
+				D657986C1F5CA2DD00C67CF3 /* CloudCondition.swift in Sources */,
 				D6E37E911F5B4CFE004C0DBE /* UIFont+Gvng.swift in Sources */,
+				D657987A1F5CA2DD00C67CF3 /* NSOperation+Operations.swift in Sources */,
+				D65798801F5CA2DD00C67CF3 /* OperationQueue.swift in Sources */,
 				D6152E491F5B4F7E00078D09 /* LoginPhoneNumberViewController.swift in Sources */,
+				D65798791F5CA2DD00C67CF3 /* NSLock+Operations.swift in Sources */,
+				D65798841F5CA2DD00C67CF3 /* RemoteNotificationCondition.swift in Sources */,
+				D6E3A9E41F5CBFFC005D00D4 /* UserDefaultsManager.swift in Sources */,
 				D657983F1F5C925B00C67CF3 /* FirebaseAppService.swift in Sources */,
+				D65798761F5CA2DD00C67CF3 /* NegatedCondition.swift in Sources */,
+				D65798831F5CA2DD00C67CF3 /* ReachabilityCondition.swift in Sources */,
 				D619DC5E1F5C72EB00CA0E83 /* LoginMusicServiceSelectionViewController.swift in Sources */,
 				D619DC501F5B78DD00CA0E83 /* Instantiable.swift in Sources */,
 				D619DC601F5C8FA100CA0E83 /* ServiceableApplicationDelegate.swift in Sources */,
+				D65798751F5CA2DD00C67CF3 /* MutuallyExclusive.swift in Sources */,
+				D657987D1F5CA2DD00C67CF3 /* OperationCondition.swift in Sources */,
+				D657986D1F5CA2DD00C67CF3 /* DelayOperation.swift in Sources */,
+				D65798851F5CA2DD00C67CF3 /* SilentCondition.swift in Sources */,
+				D657986A1F5CA2DD00C67CF3 /* CalendarCondition.swift in Sources */,
 				D61486BC1F58D03900FDF8A8 /* GVNGAppDelegate.swift in Sources */,
+				D65798701F5CA2DD00C67CF3 /* ExclusivityController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
