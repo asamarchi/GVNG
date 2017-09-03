@@ -60,6 +60,7 @@ class FirebaseManager {
             ref.child("users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
                 if let value = snapshot.value as? NSDictionary {
                     //TODO: Redirect to landing page
+                    print(value)
                     success(user)
                 } else {
                     ref.child("users").child(userID).setValue(["uid": userID])
@@ -70,5 +71,12 @@ class FirebaseManager {
             }
             
         }
+    }
+    
+    static func canHandleNotification(userInfo: [AnyHashable : Any], completionHandler: @escaping (UIBackgroundFetchResult) -> Void) {
+        if Auth.auth().canHandleNotification(userInfo) {
+            completionHandler(UIBackgroundFetchResult.noData)
+        }
+
     }
 }
