@@ -34,4 +34,7 @@ class FirebasePathManager {
         return musicServices().child(DatabasePaths.AppleMusic)
     }
 
+    static func syncDataToFirebase(data: [String: Any], path: DatabaseReference) {
+        path.setValue(data)
+    }
 }

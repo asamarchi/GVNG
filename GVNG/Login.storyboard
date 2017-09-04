@@ -39,13 +39,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mdL-IR-Zb1">
-                                <rect key="frame" x="184" y="186" width="8" height="17"/>
+                                <rect key="frame" x="184" y="185.5" width="8" height="17"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter phone number to verify your account" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xpF-iB-ksz">
-                                <rect key="frame" x="41" y="98" width="294" height="63"/>
+                                <rect key="frame" x="41" y="98" width="294" height="62.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="294" id="Vvd-oC-5Eo"/>
                                 </constraints>
@@ -196,7 +196,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select all the music services you have" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cdT-ao-vlv" userLabel="MessageLabel">
-                                <rect key="frame" x="40" y="98" width="294" height="63"/>
+                                <rect key="frame" x="40" y="98" width="294" height="62.5"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="294" id="aom-C2-Sjh"/>
                                 </constraints>
@@ -205,7 +205,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ojs-9h-HbO" userLabel="Music Service Button View">
-                                <rect key="frame" x="54" y="231" width="268" height="268"/>
+                                <rect key="frame" x="54" y="230.5" width="268" height="268"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qPL-SR-tGZ" userLabel="Apple Music Button">
                                         <rect key="frame" x="0.0" y="0.0" width="114" height="114"/>
@@ -287,13 +287,28 @@
                                     <constraint firstItem="qdZ-he-66i" firstAttribute="centerY" secondItem="aib-Ke-s3Y" secondAttribute="centerY" constant="-49" id="vCD-wc-6E4"/>
                                 </constraints>
                             </view>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="g3b-Uc-ryt">
+                                <rect key="frame" x="311" y="603" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="1xe-b5-Zjy"/>
+                                    <constraint firstAttribute="height" constant="50" id="9nH-co-NBU"/>
+                                </constraints>
+                                <state key="normal" image="pinkNext"/>
+                                <connections>
+                                    <action selector="nextButtonTapped:" destination="7Fl-c0-blf" eventType="touchUpInside" id="RP2-l3-bap"/>
+                                    <action selector="nextButtonTapped:" destination="HqQ-94-3qd" eventType="touchUpInside" id="zeo-Gw-ge4"/>
+                                    <action selector="nextTapped:" destination="cpM-Js-BDa" eventType="touchUpInside" id="qmp-RD-Q1g"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="cdT-ao-vlv" firstAttribute="top" secondItem="x8B-Dv-xWS" secondAttribute="bottom" constant="78" id="IDs-dQ-Irh"/>
                             <constraint firstItem="Ojs-9h-HbO" firstAttribute="centerX" secondItem="NC5-aT-aYa" secondAttribute="centerX" id="Tq8-9c-hRK"/>
+                            <constraint firstItem="RCo-wn-jU5" firstAttribute="top" secondItem="g3b-Uc-ryt" secondAttribute="bottom" constant="14" id="f1C-Vh-AWs"/>
                             <constraint firstItem="Ojs-9h-HbO" firstAttribute="top" secondItem="cdT-ao-vlv" secondAttribute="bottom" constant="70" id="icl-Hk-VLK"/>
                             <constraint firstItem="cdT-ao-vlv" firstAttribute="centerX" secondItem="NC5-aT-aYa" secondAttribute="centerX" id="kur-eQ-SWA"/>
+                            <constraint firstAttribute="trailing" secondItem="g3b-Uc-ryt" secondAttribute="trailing" constant="14" id="tMi-zR-bEM"/>
                         </constraints>
                     </view>
                     <connections>
@@ -302,6 +317,7 @@
                         <outlet property="googleMusicButton" destination="aib-Ke-s3Y" id="qBB-V4-Bl3"/>
                         <outlet property="googleMusicCheck" destination="qdZ-he-66i" id="p59-ZO-7q9"/>
                         <outlet property="messageLabel" destination="cdT-ao-vlv" id="lYi-Rw-z7F"/>
+                        <outlet property="nextButton" destination="g3b-Uc-ryt" id="XEb-TX-lme"/>
                         <outlet property="soundCloudCheck" destination="EMe-qz-Krr" id="EQA-fb-S5o"/>
                         <outlet property="soundcloudButton" destination="5ME-gK-0bR" id="IHh-bx-EG0"/>
                         <outlet property="spotifyButton" destination="GAv-Cz-q2G" id="kuk-d9-hCG"/>

@@ -56,20 +56,34 @@ class SpotifyManager {
             } else {
                 guard let user = object as? SPTUser else { return }
                 let productObject = user.product
-                
-                var userDict: [String: Any] = [:]
-                userDict["username"] = user.canonicalUserName
-                userDict["displayName"] = user.displayName ?? ""
-                userDict["email"] = user.emailAddress ?? ""
-                userDict["premium"] = productObject == .unlimited || productObject == .premium ? true : false
-                
-                if let lastImage = user.images.last as? SPTImage, user.images.count > 0 {
-                    userDict["imageURL"] = lastImage.imageURL.absoluteString
-                }
-                
-                FirebasePathManager.spotify().setValue(userDict)
+                let canStream = productObject == .unlimited || productObject == .premium ? true : false
+                syncSpotifyUserDataToFirebase(user: user)
+                syncSpotifyDataToFirebase(canStream: canStream)
             }
         })
+    }
+    
+    static func syncSpotifyDataToFirebase(canStream: Bool) {
+        var userDict: [String: Any] = [:]
+        
+        userDict["premium"] = canStream
+        userDict["canStream"] = canStream
+        
+        FirebasePathManager.syncDataToFirebase(data: userDict, path: FirebasePathManager.spotify())
+    }
+    
+    static func syncSpotifyUserDataToFirebase(user: SPTUser) {
+        var userDict: [String: Any] = [:]
+        
+        userDict["username"] = user.canonicalUserName
+        userDict["displayName"] = user.displayName ?? ""
+        userDict["email"] = user.emailAddress ?? ""
+        
+        if let lastImage = user.images.last as? SPTImage, user.images.count > 0 {
+            userDict["imageURL"] = lastImage.imageURL.absoluteString
+        }
+        
+        FirebasePathManager.syncDataToFirebase(data: userDict, path: FirebasePathManager.currentUser())
     }
     
     static func setSpotifySession(spotifySession: SPTSession) {

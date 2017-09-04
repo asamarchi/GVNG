@@ -38,6 +38,7 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
     @IBOutlet weak var googleMusicButton: UIButton!
     @IBOutlet weak var googleMusicCheck: UIImageView!
     
+    @IBOutlet weak var nextButton: UIButton!
 
     
     override func viewDidLoad() {
@@ -58,15 +59,25 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
         
         spotifyObserver = FirebasePathManager.spotify().observe(DataEventType.value, with: { (snapshot) in
             guard let spotifyDict = snapshot.value as? [String: Any] else { return }
+            guard let canStream = spotifyDict["canStream"] as? Bool, canStream == true else { return }
             
-            self.spotifyCheck.isHidden = self.spotifyButton.isSelected
+            self.updateCheck(shouldShowCheck: !canStream, check: self.spotifyCheck)
         })
-        
+                
         appleMusicObserver = FirebasePathManager.appleMusic().observe(DataEventType.value, with: { (snapshot) in
             guard let appleMusicDict = snapshot.value as? [String: Any] else { return }
+            guard let canStream = appleMusicDict["canStream"] as? Bool, canStream == true else { return }
             
-            self.appleMusicCheck.isHidden = self.appleMusicButton.isSelected
+            self.updateCheck(shouldShowCheck: !canStream, check: self.appleMusicCheck)
         })
+    }
+    
+    private func updateNextButton() {
+        
+    }
+    
+    private func updateCheck(shouldShowCheck: Bool, check: UIImageView) {
+        check.isHidden = shouldShowCheck
     }
     
     private func detachObservers() {
@@ -79,15 +90,12 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
     }
     
     @IBAction func appleMusicTapped(_ sender: Any) {
-        appleMusicCheck.isHidden = appleMusicButton.isSelected
+        AppleMusicManager.appleMusicRequestPermission()
+        //appleMusicCheck.isHidden = appleMusicButton.isSelected
     }
     
     @IBAction func spotifyTapped(_ sender: Any) {
-        
         SpotifyManager.authenticate()
-
-//        //TODO: Callback show check
-//        spotifyCheck.isHidden = spotifyButton.isSelected
     }
     
     @IBAction func soundCloudTapped(_ sender: Any) {
@@ -96,5 +104,9 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
     
     @IBAction func googleMusicTapped(_ sender: Any) {
 //        googleMusicCheck.isHidden = googleMusicButton.isSelected
+    }
+    
+    @IBAction func nextTapped(_ sender: Any) {
+        
     }
 }
