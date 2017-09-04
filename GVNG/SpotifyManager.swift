@@ -52,39 +52,22 @@ class SpotifyManager {
     static func getSpotifyUserData(session: SPTSession) {
         SPTUser.requestCurrentUser(withAccessToken: session.accessToken, callback: { (error, object) -> Void in
             if error != nil {
-                print("User look up error: \(error)")
+                print("error")
             } else {
                 guard let user = object as? SPTUser else { return }
-                guard let firebaseUserID = FirebaseManager.firebaseUserID() else { return }
                 let productObject = user.product
                 
-                var userDict: [String: Any] = [
-                    "username": user.canonicalUserName
-                ]
-
-                if productObject == .unlimited || productObject == .premium {
-                    userDict["premium"] = true
-                } else {
-                    userDict["premium"] = false
+                var userDict: [String: Any] = [:]
+                userDict["username"] = user.canonicalUserName
+                userDict["displayName"] = user.displayName ?? ""
+                userDict["email"] = user.emailAddress ?? ""
+                userDict["premium"] = productObject == .unlimited || productObject == .premium ? true : false
+                
+                if let lastImage = user.images.last as? SPTImage, user.images.count > 0 {
+                    userDict["imageURL"] = lastImage.imageURL.absoluteString
                 }
                 
-                if user.displayName != nil {
-                    userDict["displayName"] = user.displayName
-                }
-                
-                if user.emailAddress != nil {
-                    userDict["email"] = user.emailAddress
-                }
-                
-                if user.images.count != 0 {
-                    var image: SPTImage = user.images[0] as! SPTImage
-                    if user.images.count > 1 {
-                        image = user.images[(user.images.count) - 1] as! SPTImage
-                    }
-                    userDict["imageURL"] = image.imageURL.absoluteString
-                }
-                
-                FirebaseManager.ref.child("users").child(firebaseUserID).child("spotify").setValue(userDict)
+                FirebasePathManager.spotify().setValue(userDict)
             }
         })
     }

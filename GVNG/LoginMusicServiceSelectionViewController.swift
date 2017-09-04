@@ -23,7 +23,9 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
     
     // MARK: - Properties
     
-    var refHandle: UInt = 0
+    var spotifyObserver: UInt = 0
+    var appleMusicObserver: UInt = 0
+
     
     // MARK: IBOutlets
     @IBOutlet weak var messageLabel: UILabel!
@@ -36,27 +38,40 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
     @IBOutlet weak var googleMusicButton: UIButton!
     @IBOutlet weak var googleMusicCheck: UIImageView!
     
+
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         applyDesign()
         
-        guard let firebaseUserID = FirebaseManager.firebaseUserID() else { return }
-        
-        refHandle = FirebaseManager.ref.child("users").child(firebaseUserID).child("spotify").observe(DataEventType.value, with: { (snapshot) in
-            let postDict = snapshot.value as? [String : AnyObject] ?? [:]
-            print(snapshot.value)
-            // check to see if there is a spotify object and/or an apple object from snapshot.value.
-            // if so, update check on button.
-        })
-
+        attachObservers()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        super.viewWillAppear(animated)
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        detachObservers()
     }
-    
     // MARK: - Private
+    
+    private func attachObservers() {
+        
+        spotifyObserver = FirebasePathManager.spotify().observe(DataEventType.value, with: { (snapshot) in
+            guard let spotifyDict = snapshot.value as? [String: Any] else { return }
+            
+            self.spotifyCheck.isHidden = self.spotifyButton.isSelected
+        })
+        
+        appleMusicObserver = FirebasePathManager.appleMusic().observe(DataEventType.value, with: { (snapshot) in
+            guard let appleMusicDict = snapshot.value as? [String: Any] else { return }
+            
+            self.appleMusicCheck.isHidden = self.appleMusicButton.isSelected
+        })
+    }
+    
+    private func detachObservers() {
+        FirebasePathManager.ref.removeObserver(withHandle: self.spotifyObserver)
+    }
     
     private func applyDesign() {
         messageLabel.font = UIFont.gvngOnboardingHeaderFont()

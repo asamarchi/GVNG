@@ -10,11 +10,19 @@ import Foundation
 
 class FirebaseManager {
     
-    static let ref = Database.database().reference()
+    static let shared = FirebaseManager()
+    
+    let currentUser = Auth.auth().currentUser
+    
+    //MARK: Constants
+
+    //MARK: Setup
     
     static func setup() {
         FirebaseApp.configure()
     }
+    
+    //MARK: Getters and Setters
     
     static func setAPNSToken(deviceToken: Data) {
         Auth.auth().setAPNSToken(deviceToken, type: AuthAPNSTokenType.sandbox)
@@ -24,7 +32,7 @@ class FirebaseManager {
         UserDefaultsManager.firebaseUserID = fireBaseUserID
     }
     
-    static func firebaseUserID() -> String? {
+    static func firebaseUserID() -> String {
         return UserDefaultsManager.firebaseUserID
     }
     
@@ -35,6 +43,9 @@ class FirebaseManager {
     static func verificationID() -> String? {
         return UserDefaultsManager.verificationID
     }
+    
+    
+    //MARK: Utilities
     
     static func verifyPhoneNumber(phoneNumber: String, success: @escaping () -> Swift.Void, failure: @escaping (Error?) -> Swift.Void) {
         PhoneAuthProvider.provider().verifyPhoneNumber(phoneNumber) { (verificationID, error) in
@@ -49,6 +60,9 @@ class FirebaseManager {
         }
     }
     
+    
+    //MARK: Auth
+    
     static func signIn(withVerificationCode: String, success: @escaping (User?) -> Swift.Void, failure: @escaping (Error?) -> Swift.Void) {
         guard let verficationID = FirebaseManager.verificationID() else { return }
         let credential = PhoneAuthProvider.provider().credential(withVerificationID: verficationID, verificationCode: withVerificationCode)
@@ -61,13 +75,13 @@ class FirebaseManager {
             guard let userID = user?.uid else { return }
             setFirebaseUserID(fireBaseUserID: userID)
             
-            ref.child("users").child(userID).observeSingleEvent(of: .value, with: { (snapshot) in
+            FirebasePathManager.currentUser().observeSingleEvent(of: .value, with: { (snapshot) in
                 if let value = snapshot.value as? NSDictionary {
                     //TODO: Redirect to landing page
                     print(value)
                     success(user)
                 } else {
-                    ref.child("users").child(userID).setValue(["uid": userID])
+                    FirebasePathManager.currentUser().setValue([DatabasePaths.UserID: userID])
                     success(user)
                 }
             }) { (error) in

@@ -79,6 +79,8 @@
 		D6E37E911F5B4CFE004C0DBE /* UIFont+Gvng.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E37E901F5B4CFE004C0DBE /* UIFont+Gvng.swift */; };
 		D6E37E931F5B4D10004C0DBE /* UIColor+Gvng.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E37E921F5B4D10004C0DBE /* UIColor+Gvng.swift */; };
 		D6E3A9E41F5CBFFC005D00D4 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3A9E31F5CBFFC005D00D4 /* UserDefaultsManager.swift */; };
+		D6E3A9E91F5CD7A8005D00D4 /* FirebasePaths.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3A9E81F5CD7A8005D00D4 /* FirebasePaths.swift */; };
+		D6E3A9EB1F5CED45005D00D4 /* FirebasePathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6E3A9EA1F5CED45005D00D4 /* FirebasePathManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -162,6 +164,8 @@
 		D6E37E901F5B4CFE004C0DBE /* UIFont+Gvng.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Gvng.swift"; sourceTree = "<group>"; };
 		D6E37E921F5B4D10004C0DBE /* UIColor+Gvng.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Gvng.swift"; sourceTree = "<group>"; };
 		D6E3A9E31F5CBFFC005D00D4 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
+		D6E3A9E81F5CD7A8005D00D4 /* FirebasePaths.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebasePaths.swift; sourceTree = "<group>"; };
+		D6E3A9EA1F5CED45005D00D4 /* FirebasePathManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebasePathManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -218,6 +222,7 @@
 				D6DA64991F5B3C970086E661 /* GVNG.entitlements */,
 				D619DC5F1F5C8FA100CA0E83 /* ServiceableApplicationDelegate.swift */,
 				D61486BB1F58D03900FDF8A8 /* GVNGAppDelegate.swift */,
+				D6E3A9E71F5CD794005D00D4 /* Constants */,
 				D65798451F5CA2AD00C67CF3 /* Operations */,
 				D65798441F5CA12D00C67CF3 /* AppServices */,
 				D619DC591F5B90D400CA0E83 /* App Sections */,
@@ -310,6 +315,7 @@
 			children = (
 				D6E3A9E31F5CBFFC005D00D4 /* UserDefaultsManager.swift */,
 				D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */,
+				D6E3A9EA1F5CED45005D00D4 /* FirebasePathManager.swift */,
 				D6DA64921F5B26190086E661 /* SpotifyManager.swift */,
 			);
 			name = Managers;
@@ -465,6 +471,14 @@
 			path = GVNG;
 			sourceTree = "<group>";
 		};
+		D6E3A9E71F5CD794005D00D4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D6E3A9E81F5CD7A8005D00D4 /* FirebasePaths.swift */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -567,6 +581,7 @@
 				D6E37E931F5B4D10004C0DBE /* UIColor+Gvng.swift in Sources */,
 				D657987B1F5CA2DD00C67CF3 /* NSURL+CacheFiles.swift in Sources */,
 				D65798781F5CA2DD00C67CF3 /* NoCancelledDependencies.swift in Sources */,
+				D6E3A9E91F5CD7A8005D00D4 /* FirebasePaths.swift in Sources */,
 				D657987F1F5CA2DD00C67CF3 /* OperationObserver.swift in Sources */,
 				D65798411F5C92C300C67CF3 /* SpotifyAppService.swift in Sources */,
 				D65798691F5CA2DD00C67CF3 /* BlockOperation.swift in Sources */,
@@ -585,6 +600,7 @@
 				D65798831F5CA2DD00C67CF3 /* ReachabilityCondition.swift in Sources */,
 				D619DC5E1F5C72EB00CA0E83 /* LoginMusicServiceSelectionViewController.swift in Sources */,
 				D619DC501F5B78DD00CA0E83 /* Instantiable.swift in Sources */,
+				D6E3A9EB1F5CED45005D00D4 /* FirebasePathManager.swift in Sources */,
 				D619DC601F5C8FA100CA0E83 /* ServiceableApplicationDelegate.swift in Sources */,
 				D65798751F5CA2DD00C67CF3 /* MutuallyExclusive.swift in Sources */,
 				D657987D1F5CA2DD00C67CF3 /* OperationCondition.swift in Sources */,
