@@ -25,7 +25,10 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
     
     var spotifyObserver: UInt = 0
     var appleMusicObserver: UInt = 0
-
+    
+    let viewModel = LoginMusicServiceSelectionViewModel()
+    
+    var checks: [MusicServiceType: UIImageView] = [:]
     
     // MARK: IBOutlets
     @IBOutlet weak var messageLabel: UILabel!
@@ -41,39 +44,58 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
     @IBOutlet weak var nextButton: UIButton!
 
     
+    //MARK: View Lifecycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+
+        setupChecks()
         applyDesign()
-        
         attachObservers()
+        updateNextButton()
     }
     
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         detachObservers()
     }
+    
+    
     // MARK: - Private
     
+    private func applyDesign() {
+        messageLabel.font = UIFont.gvngOnboardingHeaderFont()
+        messageLabel.textColor = UIColor.gvngBrownishGrey
+    }
+    
+    private func setupChecks() {
+        checks = [MusicServiceType.AppleMusic : appleMusicCheck, MusicServiceType.Spotify : spotifyCheck]
+    }
+    
     private func attachObservers() {
-        
-        spotifyObserver = FirebasePathManager.spotify().observe(DataEventType.value, with: { (snapshot) in
-            guard let spotifyDict = snapshot.value as? [String: Any] else { return }
-            guard let canStream = spotifyDict["canStream"] as? Bool, canStream == true else { return }
-            
-            self.updateCheck(shouldShowCheck: !canStream, check: self.spotifyCheck)
-        })
-                
-        appleMusicObserver = FirebasePathManager.appleMusic().observe(DataEventType.value, with: { (snapshot) in
-            guard let appleMusicDict = snapshot.value as? [String: Any] else { return }
-            guard let canStream = appleMusicDict["canStream"] as? Bool, canStream == true else { return }
-            
-            self.updateCheck(shouldShowCheck: !canStream, check: self.appleMusicCheck)
+        viewModel.musicServices.asObservable().subscribe( onNext: { bool in
+            self.updateChecks()
+            self.updateNextButton()
         })
     }
     
-    private func updateNextButton() {
+    private func updateChecks() {
+        for musicService in viewModel.musicServices.value.values {
+            updateCheckForMusiceService(musicService: musicService)
+        }
+    }
+    
+    private func updateCheckForMusiceService(musicService: MusicService) {
+        guard let canStream = musicService.canStream else { return }
+        guard let name = musicService.name else { return }
+        guard let check = self.musicServiceCheck(musicServiceName: name) else { return }
         
+        self.updateCheck(shouldShowCheck: !canStream, check: check)
+    }
+    
+    private func musicServiceCheck(musicServiceName: String) -> UIImageView? {
+        guard let musicServiceType = MusicServiceType(rawValue: musicServiceName) else { return nil }
+        return checks[musicServiceType]
     }
     
     private func updateCheck(shouldShowCheck: Bool, check: UIImageView) {
@@ -84,10 +106,8 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
         FirebasePathManager.ref.removeObserver(withHandle: self.spotifyObserver)
     }
     
-    private func applyDesign() {
-        messageLabel.font = UIFont.gvngOnboardingHeaderFont()
-        messageLabel.textColor = UIColor.gvngBrownishGrey
-    }
+    
+    //MARK: IBActions
     
     @IBAction func appleMusicTapped(_ sender: Any) {
         AppleMusicManager.appleMusicRequestPermission()
@@ -99,14 +119,28 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
     }
     
     @IBAction func soundCloudTapped(_ sender: Any) {
-//        soundCloudCheck.isHidden = soundcloudButton.isSelected
+        //TODO: Implement
     }
     
     @IBAction func googleMusicTapped(_ sender: Any) {
-//        googleMusicCheck.isHidden = googleMusicButton.isSelected
+        //TODO: Implement
     }
     
     @IBAction func nextTapped(_ sender: Any) {
-        
+        //TODO: Landing Page
+    }
+    
+    private func updateNextButton() {
+        for musicService in viewModel.musicServices.value.values {
+            guard let canStream = musicService.canStream else { return }
+            
+            if canStream {
+                nextButton.isHidden = false
+                break
+            } else {
+                nextButton.isHidden = true
+            }
+        }
     }
 }
+

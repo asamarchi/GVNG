@@ -15,3 +15,4 @@ struct DatabasePaths {
     static var AppleMusic = "appleMusic"
     static var UserID = "uid"
 }
+
