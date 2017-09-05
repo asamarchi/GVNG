@@ -66,10 +66,9 @@ class SpotifyManager {
     static func syncSpotifyDataToFirebase(canStream: Bool) {
         var userDict: [String: Any] = [:]
         
-        userDict["premium"] = canStream
         userDict["canStream"] = canStream
         
-        FirebasePathManager.syncDataToFirebase(data: userDict, path: FirebasePathManager.spotify())
+        FirebasePathManager.setFirebaseDataAtPath(data: userDict, path: FirebasePathManager.spotify())
     }
     
     static func syncSpotifyUserDataToFirebase(user: SPTUser) {
@@ -83,7 +82,7 @@ class SpotifyManager {
             userDict["imageURL"] = lastImage.imageURL.absoluteString
         }
         
-        FirebasePathManager.syncDataToFirebase(data: userDict, path: FirebasePathManager.currentUser())
+        FirebasePathManager.updateFirebaseDataAtPath(data: userDict, path: FirebasePathManager.currentUser())
     }
     
     static func setSpotifySession(spotifySession: SPTSession) {

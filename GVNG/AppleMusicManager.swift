@@ -45,6 +45,6 @@ class AppleMusicManager {
     static func syncAppleMusicDataToFirebase() {
         var userDict: [String: Any] = [:]
         userDict["canStream"] = true        
-        FirebasePathManager.syncDataToFirebase(data: userDict, path: FirebasePathManager.appleMusic())
+        FirebasePathManager.setFirebaseDataAtPath(data: userDict, path: FirebasePathManager.appleMusic())
     }
 }
