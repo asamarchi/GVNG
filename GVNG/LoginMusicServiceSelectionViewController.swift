@@ -128,6 +128,7 @@ class LoginMusicServiceSelectionViewController: UIViewController, Instantiable {
     
     @IBAction func nextTapped(_ sender: Any) {
         //TODO: Landing Page
+        dismiss(animated: true, completion: nil)
     }
     
     private func updateNextButton() {

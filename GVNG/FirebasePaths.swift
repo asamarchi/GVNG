@@ -10,6 +10,7 @@ import Foundation
 
 struct DatabasePaths {
     static var Users = "users"
+    static var Playing = "playing"
     static var MusiceServices = "musicServices"
     static var Spotify = "spotify"
     static var AppleMusic = "appleMusic"

@@ -17,6 +17,7 @@ class GVNGAppDelegate: ServiceableApplicationDelegate {
             FirebaseAppService(),
             SpotifyAppService(),
             PushNotificationsAppService(),
+            AppleMusicAppService()
         ]
     }
 }

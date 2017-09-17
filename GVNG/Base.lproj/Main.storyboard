@@ -1,11 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16D32" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="C4q-Bc-jnP">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Splash Screen View Controller-->
+        <scene sceneID="mGI-gf-kW4">
+            <objects>
+                <viewController storyboardIdentifier="SplashScreenViewController.swift" id="C4q-Bc-jnP" customClass="SplashScreenViewController" customModule="GVNG" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="PGL-vy-YF9"/>
+                        <viewControllerLayoutGuide type="bottom" id="I4k-Xe-zcc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="J6l-zR-6PQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo" translatesAutoresizingMaskIntoConstraints="NO" id="xbZ-pq-6pj">
+                                <rect key="frame" x="97" y="243" width="180" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="180" id="4xa-xn-7oH"/>
+                                    <constraint firstAttribute="width" constant="180" id="IVp-Pw-Mvp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="0.50588235290000005" blue="0.65098039220000004" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="xbZ-pq-6pj" firstAttribute="centerY" secondItem="J6l-zR-6PQ" secondAttribute="centerY" id="TRa-OD-RfZ"/>
+                            <constraint firstItem="xbZ-pq-6pj" firstAttribute="centerX" secondItem="J6l-zR-6PQ" secondAttribute="centerX" id="iTD-uI-Oy7"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="oK7-2w-VQi" kind="show" identifier="toLogin" id="v3R-ba-dJw"/>
+                        <segue destination="v7i-4r-fwS" kind="show" identifier="toLanding" animates="NO" id="ypN-Fb-uUC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1MF-3G-0JH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-522" y="-51"/>
+        </scene>
+        <!--Login-->
+        <scene sceneID="tUb-r4-TQq">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Login" storyboardName="Login" id="oK7-2w-VQi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JYv-lo-VA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="255" y="-269"/>
+        </scene>
+        <!--Landing-->
+        <scene sceneID="Eey-8Y-S8O">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Landing" storyboardName="Landing" id="v7i-4r-fwS" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2BJ-ss-UiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="254" y="122"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo" width="199" height="190"/>
+    </resources>
 </document>

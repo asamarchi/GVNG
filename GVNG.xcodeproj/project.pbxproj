@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D602F7BB1F6447EC00BA0455 /* AppleMusicAppService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D602F7BA1F6447EC00BA0455 /* AppleMusicAppService.swift */; };
 		D60DFDAA1F58DD2E000A7241 /* FirebaseAnalytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60DFDA91F58DD2E000A7241 /* FirebaseAnalytics.framework */; };
 		D60DFDAC1F58E08B000A7241 /* FirebaseNanoPB.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60DFDAB1F58E08B000A7241 /* FirebaseNanoPB.framework */; };
 		D60DFDAE1F58E0C7000A7241 /* leveldb-library.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D60DFDAD1F58E0C7000A7241 /* leveldb-library.framework */; };
@@ -86,6 +87,11 @@
 		D6C292DD1F5DE669002954A2 /* Variable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C292CF1F5DE669002954A2 /* Variable.swift */; };
 		D6C292DF1F5DEB98002954A2 /* LoginMusicServiceSelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C292DE1F5DEB98002954A2 /* LoginMusicServiceSelectionViewModel.swift */; };
 		D6C292E21F5DEBCC002954A2 /* MusicService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C292E11F5DEBCC002954A2 /* MusicService.swift */; };
+		D6C292EE1F5F8ABE002954A2 /* SplashScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C292ED1F5F8ABE002954A2 /* SplashScreenViewController.swift */; };
+		D6C292F01F5F929D002954A2 /* Landing.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D6C292EF1F5F929D002954A2 /* Landing.storyboard */; };
+		D6C292F21F5FB40F002954A2 /* AppleMusicPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C292F11F5FB40F002954A2 /* AppleMusicPlayer.swift */; };
+		D6C292F51F5FB487002954A2 /* LandingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C292F41F5FB487002954A2 /* LandingViewController.swift */; };
+		D6C292F81F5FB5D2002954A2 /* AppleMusicNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C292F71F5FB5D2002954A2 /* AppleMusicNotificationManager.swift */; };
 		D6DA647E1F5B0C1B0086E661 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */; };
 		D6DA64891F5B0FBA0086E661 /* SpotifyAudioPlayback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64861F5B0FBA0086E661 /* SpotifyAudioPlayback.framework */; };
 		D6DA648A1F5B0FBA0086E661 /* SpotifyAuthentication.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6DA64871F5B0FBA0086E661 /* SpotifyAuthentication.framework */; };
@@ -101,6 +107,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D602F7BA1F6447EC00BA0455 /* AppleMusicAppService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleMusicAppService.swift; sourceTree = "<group>"; };
 		D60DFDA91F58DD2E000A7241 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseAnalytics.framework; sourceTree = "<group>"; };
 		D60DFDAB1F58E08B000A7241 /* FirebaseNanoPB.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FirebaseNanoPB.framework; sourceTree = "<group>"; };
 		D60DFDAD1F58E0C7000A7241 /* leveldb-library.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "leveldb-library.framework"; sourceTree = "<group>"; };
@@ -185,6 +192,11 @@
 		D6C292CF1F5DE669002954A2 /* Variable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Variable.swift; sourceTree = "<group>"; };
 		D6C292DE1F5DEB98002954A2 /* LoginMusicServiceSelectionViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginMusicServiceSelectionViewModel.swift; sourceTree = "<group>"; };
 		D6C292E11F5DEBCC002954A2 /* MusicService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MusicService.swift; sourceTree = "<group>"; };
+		D6C292ED1F5F8ABE002954A2 /* SplashScreenViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SplashScreenViewController.swift; sourceTree = "<group>"; };
+		D6C292EF1F5F929D002954A2 /* Landing.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Landing.storyboard; sourceTree = "<group>"; };
+		D6C292F11F5FB40F002954A2 /* AppleMusicPlayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleMusicPlayer.swift; sourceTree = "<group>"; };
+		D6C292F41F5FB487002954A2 /* LandingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingViewController.swift; sourceTree = "<group>"; };
+		D6C292F71F5FB5D2002954A2 /* AppleMusicNotificationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppleMusicNotificationManager.swift; sourceTree = "<group>"; };
 		D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
 		D6DA64861F5B0FBA0086E661 /* SpotifyAudioPlayback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAudioPlayback.framework; sourceTree = "<group>"; };
 		D6DA64871F5B0FBA0086E661 /* SpotifyAuthentication.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyAuthentication.framework; sourceTree = "<group>"; };
@@ -347,11 +359,11 @@
 		D619DC551F5B907300CA0E83 /* Managers */ = {
 			isa = PBXGroup;
 			children = (
+				D6C292F61F5FB5C5002954A2 /* AppleMusic */,
 				D6E3A9E31F5CBFFC005D00D4 /* UserDefaultsManager.swift */,
 				D6DA647D1F5B0C1B0086E661 /* FirebaseManager.swift */,
 				D6E3A9EA1F5CED45005D00D4 /* FirebasePathManager.swift */,
 				D6DA64921F5B26190086E661 /* SpotifyManager.swift */,
-				D65C470B1F5CF341007737C1 /* AppleMusicManager.swift */,
 			);
 			name = Managers;
 			sourceTree = "<group>";
@@ -385,6 +397,8 @@
 		D619DC591F5B90D400CA0E83 /* App Sections */ = {
 			isa = PBXGroup;
 			children = (
+				D6C292ED1F5F8ABE002954A2 /* SplashScreenViewController.swift */,
+				D6C292F31F5FB47F002954A2 /* Landing */,
 				D619DC5A1F5B90F100CA0E83 /* Login */,
 			);
 			name = "App Sections";
@@ -418,6 +432,7 @@
 				D61486BF1F58D03900FDF8A8 /* Main.storyboard */,
 				D6E37E8E1F5B4B79004C0DBE /* Login.storyboard */,
 				D61486C41F58D03900FDF8A8 /* LaunchScreen.storyboard */,
+				D6C292EF1F5F929D002954A2 /* Landing.storyboard */,
 			);
 			name = Storyboards;
 			sourceTree = "<group>";
@@ -428,6 +443,7 @@
 				D657983E1F5C925B00C67CF3 /* FirebaseAppService.swift */,
 				D65798401F5C92C300C67CF3 /* SpotifyAppService.swift */,
 				D65798421F5C92ED00C67CF3 /* PushNotificationsAppService.swift */,
+				D602F7BA1F6447EC00BA0455 /* AppleMusicAppService.swift */,
 			);
 			name = AppServices;
 			sourceTree = "<group>";
@@ -525,6 +541,24 @@
 			name = Model;
 			sourceTree = "<group>";
 		};
+		D6C292F31F5FB47F002954A2 /* Landing */ = {
+			isa = PBXGroup;
+			children = (
+				D6C292F41F5FB487002954A2 /* LandingViewController.swift */,
+			);
+			name = Landing;
+			sourceTree = "<group>";
+		};
+		D6C292F61F5FB5C5002954A2 /* AppleMusic */ = {
+			isa = PBXGroup;
+			children = (
+				D65C470B1F5CF341007737C1 /* AppleMusicManager.swift */,
+				D6C292F11F5FB40F002954A2 /* AppleMusicPlayer.swift */,
+				D6C292F71F5FB5D2002954A2 /* AppleMusicNotificationManager.swift */,
+			);
+			name = AppleMusic;
+			sourceTree = "<group>";
+		};
 		D6DA647F1F5B0F810086E661 /* Spotify */ = {
 			isa = PBXGroup;
 			children = (
@@ -589,6 +623,9 @@
 						DevelopmentTeam = 66WC295E7G;
 						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Push = {
 								enabled = 1;
 							};
@@ -619,6 +656,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D6C292F01F5F929D002954A2 /* Landing.storyboard in Resources */,
 				D61486C61F58D03900FDF8A8 /* LaunchScreen.storyboard in Resources */,
 				D61486CE1F58D03E00FDF8A8 /* GoogleService-Info.plist in Resources */,
 				D61486C31F58D03900FDF8A8 /* Assets.xcassets in Resources */,
@@ -642,6 +680,7 @@
 				D65798731F5CA2DD00C67CF3 /* LocationCondition.swift in Sources */,
 				D6DA64931F5B26190086E661 /* SpotifyManager.swift in Sources */,
 				D657986F1F5CA2DD00C67CF3 /* Dictionary+Operations.swift in Sources */,
+				D6C292F51F5FB487002954A2 /* LandingViewController.swift in Sources */,
 				D657987E1F5CA2DD00C67CF3 /* OperationErrors.swift in Sources */,
 				D6DA647E1F5B0C1B0086E661 /* FirebaseManager.swift in Sources */,
 				D65798711F5CA2DD00C67CF3 /* GroupOperation.swift in Sources */,
@@ -672,6 +711,7 @@
 				D65798691F5CA2DD00C67CF3 /* BlockOperation.swift in Sources */,
 				D65798671F5CA2DD00C67CF3 /* AlertOperation.swift in Sources */,
 				D65798741F5CA2DD00C67CF3 /* LocationOperation.swift in Sources */,
+				D6C292EE1F5F8ABE002954A2 /* SplashScreenViewController.swift in Sources */,
 				D657986C1F5CA2DD00C67CF3 /* CloudCondition.swift in Sources */,
 				D65C470C1F5CF341007737C1 /* AppleMusicManager.swift in Sources */,
 				D6E37E911F5B4CFE004C0DBE /* UIFont+Gvng.swift in Sources */,
@@ -698,9 +738,12 @@
 				D6C292DD1F5DE669002954A2 /* Variable.swift in Sources */,
 				D65798851F5CA2DD00C67CF3 /* SilentCondition.swift in Sources */,
 				D657986A1F5CA2DD00C67CF3 /* CalendarCondition.swift in Sources */,
+				D602F7BB1F6447EC00BA0455 /* AppleMusicAppService.swift in Sources */,
+				D6C292F21F5FB40F002954A2 /* AppleMusicPlayer.swift in Sources */,
 				D61486BC1F58D03900FDF8A8 /* GVNGAppDelegate.swift in Sources */,
 				D65798701F5CA2DD00C67CF3 /* ExclusivityController.swift in Sources */,
 				D6C292DC1F5DE669002954A2 /* Subscriber.swift in Sources */,
+				D6C292F81F5FB5D2002954A2 /* AppleMusicNotificationManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

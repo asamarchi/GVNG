@@ -56,6 +56,10 @@ open class ServiceableApplicationDelegate: UIResponder, UIApplicationDelegate {
         
         return result
     }
+    
+    public func applicationDidEnterBackground(_ application: UIApplication) {
+        _services.forEach { $0.applicationDidEnterBackground?(application) }
+    }
 
     public func applicationDidBecomeActive(_ application: UIApplication) {
         _services.forEach { $0.applicationDidBecomeActive?(application) }
